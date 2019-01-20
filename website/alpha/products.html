@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+		name: Parker Dinkins
+		date: 12/6/18
+		class: CGS1821
+		assignment: final project
+		lang: HTML5
+		purpose: showcase skills learned in class
+		includes: all the images and the stylesheets
+	-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cloud Chain | Products</title>
+	<link rel="shortcut icon" href="images/favicon1.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+	});
+	</script>
+</head>
+<!--Body area -->
+<body>
+	<!-- header area -->
+	<header>
+		<img src="images/logo.png">
+	</header>  
+	<!-- Nav menu -->
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+  	    <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="technology.html">Technology</a></li>
+    	    <li><a href="products.html" class="current">Products</a></li>
+    	    <li><a href="services.html">Resources</a></li>
+    	    <li><a href="contact.html">Contact</a></li>
+	    </ul>
+	</nav>
+	<!--main area-->
+	<main>
+		<!--main section that contians most of the content-->
+        <section>
+			<h2>Cloud Chain offers four product solutions to suite anybodys needs.</h2>
+            <p>
+                <img src="images/s.jpg" class="image1">
+                <img src="images/d.jpg" class="image1">
+            </p>
+            <p>
+                <img src="images/b.jpg" class="image1">
+                <img src="images/e.jpg" class="image1">
+            </p>
+		</section>		
+	</main>
+	<!-- Footer area of the page -->
+	<footer>
+			<p>&copy; 2019 Cloud Chain</p>		
+	</footer>
+</body>
+</html>

@@ -1,0 +1,326 @@
+/*
+name: Parker Dinkins
+date: 12/6/18
+class: CGS1821
+assignment: final project
+lang: CSS
+purpose: showxase skills learned in class
+includes: all the images and the stylesheets
+*/
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    width: 99.88%;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover, a:focus { 
+    color: maroon;
+}
+
+/* the styles for the header */
+header {
+    /*
+    background-image: -webkit-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -moz-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: -o-linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    background-image: linear-gradient(to bottom, white 0%, lightsteelblue 100%); */  
+    padding: 15px 3.3333%;              /* 30 / 900 * 100 */
+    border-bottom: 2px solid rgb(50, 95, 153);                                                     
+} 
+header img {
+    align-content: center;
+    width: 95%;
+} 
+header h2 {
+	font-size: 250%;
+	font-style: italic;
+	color: rgb(50, 95, 153);
+	text-indent: 5%;
+	text-shadow: 3px 3px 3px rgb(54, 99, 136);
+    margin-bottom: .3em;
+}
+header h3 {
+	font-size: 150%;
+    text-indent: 5%;
+    padding-bottom: .75em;       
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+    font-family: 'Ubuntu', sans-serif;
+	clear: left;
+    border-bottom: 2px solid rgb(50, 95, 153);
+}
+#nav_menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+#nav_menu ul li {
+    flex-basis: 20%;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	background-color: rgb(50, 95, 153);
+	color: white;
+}
+#nav_menu ul li a.current {
+	color: black;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: lightsteelblue;
+}
+
+
+/* the styles for the main element */
+main {
+    display: flex;
+}
+
+/* the styles for the section */
+section {
+    padding: 5%;
+    order: 1;
+    flex-basis: 100%;
+}
+section h1 {
+    font-size: 160%;
+    margin-bottom: .3em;
+}
+section h3 {
+    color: maroon;
+    font-size: 110%;
+    margin-bottom: .4em;
+}
+section p {
+    font-size: 130%;
+    margin-bottom: .7em;
+    
+}
+section img {
+    padding: 1%;
+}
+section p img {
+    width: 47.25%;
+}
+
+
+
+
+/* the styles for the sidebar */
+aside {
+    padding-right: 5%;
+    padding-top: 10%;
+    order: 2;
+}
+aside h2 {
+    color: rgb(50, 95, 153);
+    margin-bottom: .4em;
+}
+aside ul {
+    list-style: none;
+    line-height: 1.5;    
+    margin: 0;                      
+}
+aside ul li {
+    padding-top: 2%;
+}
+aside ul li img {
+    display: flex;
+    padding: 1em;
+    max-width: 130px;
+}
+aside a {
+    font-size: 130%;
+}
+aside a:link, aside a:visited { 
+    color: rgb(50, 95, 153);
+}
+aside a:hover, aside a:focus {
+    color: maroon;
+}
+
+.image1 {
+    transition: 2s;
+}
+
+.image1:hover {
+    transform: rotate(5deg);
+    transform: scale(1.07);
+    transform-origin: center;
+}
+
+.image2 {
+    transition: 2s;
+}
+
+.image2:hover {
+    transform: rotate(5deg);
+    transform: scale(1.07);
+    transform-origin: center;
+}
+
+.image3 {
+    width: 100px;
+    transition: 2s;
+}
+
+.image3:hover {
+    transform: rotate(5deg);
+    transform: scale(1.07);
+    transform-origin: center;
+}
+ .googlefont {
+    font-family: 'Ubuntu', sans-serif;
+ }
+
+/* the styles for the form */
+fieldset {
+    margin-bottom: .5em;
+    padding: .5em 1em;
+}
+legend {
+    font-weight: bold;
+    font-size: 85%;
+    padding-bottom: .5em;
+}
+label, input, select {
+	font-size: 90%;
+}
+label {
+    float: left;
+    width: 10em;
+    text-align: right;
+}
+textarea {
+    height: 5em;
+    width: 75%;
+    margin-left: 2.5em;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] input:invalid {
+	border: 2px solid rgb(50, 95, 153);
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+#radio label {
+	float: none;
+}
+#radio input {
+	width: auto;
+	margin-left: 3em;
+}
+#exp_month {
+	width: 7em;
+}
+#exp_year {
+	width: 5em;
+}
+#buttons input {
+	width: 10em;
+}
+#lifestyle label, #food label, #other label {
+	float: none;
+}
+#lifestyle input, #food input {
+	width: auto;
+	margin-left: 3em;
+}
+#submit {
+    margin-left: 3em;
+}
+
+/* the styles for the footer */
+footer { 
+	padding: .9375em 3.3333%;
+    background-color: rgb(50, 95, 153);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 
+footer p {
+	text-align: center;
+    font-size: 85%;
+    color: white;
+}
+#mobile_menu {
+	display: none;
+}
+
+/* media queries */
+@media only screen and (max-width: 850px) {
+    section p img {
+        width: 100%;
+    }
+    section {
+        flex-basis: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+    
+    .slicknav_menu {
+        background: rgb(50, 95, 153) !important;
+	    padding: 3px !important;
+    }
+
+    #mobile_menu {
+		display: block;
+	}
+    #mobile_menu ul {
+        background-color: rgb(50, 95, 153);
+    }
+    #mobile_menu a {
+        background-color: rgb(50, 95, 153);
+    }
+    #mobile_menu a:hover, #mobile_menu a:focus {
+        color: lightsteelblue;
+    }
+    main {
+        flex-direction: column;
+    }
+    aside {
+        order: 2;
+    }
+    section p img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    section p {
+	    font-size: 95%;
+    }
+    section p img {
+        width: 100%;
+    }
+}

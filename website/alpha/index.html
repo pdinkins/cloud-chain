@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+		name: Parker Dinkins
+		date: 12/6/18
+		class: CGS1821
+		assignment: final project
+		lang: HTML5
+		purpose: showcase skills learned in class
+		includes: all the images and the stylesheets
+	-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cloud Chain</title>
+	<link rel="shortcut icon" href="images/favicon1.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+	});
+	</script>
+
+</head>
+<!--Body area -->
+<body>
+	<!-- header area -->
+	<header>
+		<img src="images/logo.png">
+	</header>  
+	<!-- Nav menu -->
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+  	    <ul>
+			<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="technology.html">Technology</a></li>
+    	    <li><a href="products.html">Products</a></li>
+    	    <li><a href="services.html">Resources</a></li>
+    	    <li><a href="contact.html">Contact</a></li>
+	    </ul>
+	</nav>
+	<!--main area-->
+	<main>
+		<!--main section that contians most of the content-->
+        <section>
+			<p>
+				<img src="images/info1.jpg" class="image1">
+				<img src="images/info2.jpg" class="image1">
+				<img src="images/info3.jpg" class="image1">
+				<img src="images/info4.jpg" class="image1">
+				<img src="images/info5.jpg" class="image1">
+			</p>
+			<!--
+			<p>
+				The Bitcoin whitepaper released by Satoshi Nakamoto not only made crypto currency possible but laid the foundations 
+				for the third industrial revolution. A crypto currency in design is a decentralized network of computers with a shared interest.
+				This decentralized network of computers where ever they might be located in world are all running
+				the same software. This code each computer runs is the same as the next computer in the network
+				and allows each computer to store a record of 'transactions' that happen in the network. In the case of Bitcoin, 
+				when one user would like to send a coin to another, over half of all active network computers must recognise 
+				the transaction, make sure its a legal transaction meaning the person actually has the money and finally record
+				the details of the transaction and store them in the blockchain 'ledger'.
+			</p>
+		-->
+		</section>	
+		<!--aside area that contains external resource links -->
+		<aside>
+			<ul>
+				<li>
+					<h2 class="googlefont">Click logo for more info</h2>
+				</li>
+				<!-- Bitcoin -->
+				<li>
+					<a href="https://bitcoin.org/bitcoin.pdf"><img src="images/bitcoinlogo.png" alt="bitcoin logo"></a>
+				</li>
+
+				<!-- Ethereum -->
+				<li>
+					<a href="https://github.com/ethereum/wiki/wiki/White-Paper"><img src="images/eth.png" alt="ethereum logo"></a>
+				</li>
+
+				<!-- IPFS -->
+				<li>
+					<a href="https://docs.ipfs.io/"><img src="images/ipfs.svg" alt="ipfs logo"></a>
+				</li>
+
+				<!-- XYO -->
+				<li>
+					<a href="https://docs.xyo.network/XYO-White-Paper.pdf"><img src="images/xyo.png" alt="xyo logo"></a>
+				</li>
+
+				<!-- libp2p -->
+				<li>
+					<a href="https://github.com/libp2p/specs"><img src="images/libp2p.png"></a>
+				</li>
+
+				<!-- IPLD -->
+				<li>
+					<a href="https://github.com/ipld/specs"><img src="images/logo_IPLD.svg"></a>
+				</li>
+			</ul>
+		</aside>
+	</main>
+	<!-- Footer area of the page -->
+	<footer>
+			<p>&copy; 2019 Cloud Chain</p>		
+	</footer>
+</body>
+</html>
