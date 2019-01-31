@@ -134,7 +134,7 @@ def rfs(pathname):
 
 # Execute user build sequence
 def __user_build():
-    ub = setup.UserBuild()
+    ub = UserBuild()
     input('enter>')
 
 # Display help information

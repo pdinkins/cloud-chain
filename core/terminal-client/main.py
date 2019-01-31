@@ -68,6 +68,7 @@ def choose_from_menu(menulist, menu_dictionary):
  
 
 if __name__ == "__main__":
-    ui = Interface()
+    testdict = {}
+    ui = Interface(testdict)
     #ui.display()
 

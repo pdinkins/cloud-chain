@@ -8,3 +8,4 @@ History
 
 0.1.2-1.31.19
 * documentation consolidation 
+* __init__.py file addition to core libraries
