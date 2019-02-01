@@ -9,9 +9,12 @@ class Interface:
     """
     Terminal Interface
     """
-    def __init__(self, md):
-        self.__menu_dict = md
+    def __init__(self, menudict, menutitle, lus=None):
+        self.__menudict = menudict
+        self.__menutitle = menutitle
         self.__operating_system = platform.system()
+        self.__userstate = self.checkuserstate()
+        self.__localuserstate = lus
     
     # Horizontal Title Bar
     def __title_bar(self):
@@ -20,11 +23,10 @@ class Interface:
     # Title Bar Information
     def __title(self):
         self.__title_bar()
-        print('_TERMINAL_UI_____\t\t____', datetime.datetime.now())
+        print('\t\t____________________', datetime.datetime.now())
         print('\t\t|_____ADMIN_____|')
         print("\t\t\t\t|__", platform.platform())
-        print("\t\t\t\t|__", "Python Version:",platform.python_version())
-        print("\t\t\t\t|__", platform.machine())
+        print("\t\t\t\t|__","Python Version:",platform.python_version())
         self.__title_bar()
 
     # Determine the system and clear the terminal screen
@@ -34,15 +36,22 @@ class Interface:
         elif self.__operating_system == 'Windows':
             os.system('cls')
 
-    def menu(self):
-        pass
+    def __menu(self):
+        initialize_menu(self.__menudict, self.__menutitle)
 
-
+    def checkuserstate(self):
+        if self.__localuserstate == 0:
+            return False
+        elif self.__localuserstate == 1:
+            return True
+        else:
+            return None
 
     # Clears the screen then displays the title bar
     def display(self):
         self.__clear()
         self.__title()
+        self.__menu()
 
 
 def initialize_menu(menu_dictionary, menutitle):
