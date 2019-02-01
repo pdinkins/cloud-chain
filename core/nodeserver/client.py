@@ -326,7 +326,7 @@ def login():
                         refresh_screen()
                         print('LOGING OUT OF THE MATRIX')
                         clear()
-                        break
+                        login = False
 
         
 
