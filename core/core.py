@@ -33,8 +33,10 @@ __config = {
         "pinterest":[],
         "skype":[]}
 
-with open("cfg.cfg", 'w') as cfgfile:
-    cfgfile.write(str(__config))
+
+def __write_config_file():
+    with open("cfg.cfg", 'w') as cfgfile:
+        cfgfile.write(str(__config))
 
 
 
