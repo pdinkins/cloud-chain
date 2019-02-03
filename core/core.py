@@ -18,3 +18,26 @@ import requests
 # local module imports
 
 
+# config data
+__config = {
+        "user":[],
+        "ipfshash":[],
+        "ip":[],
+        "google":[],
+        "facebook":[],
+        "twitter":[],
+        "instagram":[],
+        "discord":[],
+        "github":[],
+        "gitlab":[],
+        "pinterest":[],
+        "skype":[]}
+
+with open("cfg.cfg", 'w') as cfgfile:
+    cfgfile.write(str(__config))
+
+
+
+
+        
+
