@@ -17,6 +17,10 @@ import requests
 
 # local module imports
 
+# Github Repositories 
+gitrepo_go_ipfs = "https://github.com/ipfs/go-ipfs.git"
+gitrepo_ripple = "https://github.com/ripple/rippled.git"
+gitrepo_ripple_net_crawler = "https://github.com/ripple/rippled-network-crawler.git"
 
 # config data
 __config = {
