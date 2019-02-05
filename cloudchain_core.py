@@ -17,6 +17,7 @@ import requests
 
 # local module imports
 from core.terminalclient.main import *
+from core.nodeserver.library.ipfs import *
 
 # main script sequence that spawns subsequent processes decribed below
     
