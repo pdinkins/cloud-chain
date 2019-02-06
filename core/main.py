@@ -15,7 +15,7 @@ import shutil
 import requests
 
 # core module classes and function imports
-from core.ipfs.main import IPFS_API
+from core.ipfs.main import IPFS_API, IPFS_API_CONNECTION, pbs
 from core.terminalclient.main import Interface
 
 
@@ -51,9 +51,17 @@ def node_server_debug_client():
 def httpserver():
     os.system("start py -m http.server --bind 127.0.0.1")
 
+def setupsequence():
+    os.system("start echo system")
+
 ccc_menu_dict = {
     "node-server debug client": node_server_debug_client,
     "http server": httpserver
 }
+
+ccc_setup_menu_dict = {
+    "setup sequence": setupsequence
+}
         
 mainmenu = Interface(ccc_menu_dict, "CloudChainCore")
+setupmenu = Interface(ccc_setup_menu_dict, "Setup Menu")

@@ -7,7 +7,25 @@
 # third party package imports
 import ipfsapi
 
+def IPFS_API_CONNECTION():
+    return ipfsapi.connect("127.0.0.1", 5002)
 
+__bitswap_stat_dict= [
+    'ProvideBufLen', 
+    'Wantlist', 
+    'Peers', 
+    'BlocksReceived', 
+    'DataReceived', 
+    'BlocksSent', 
+    'DataSent', 
+    'DupBlksReceived', 
+    'DupDataReceived']
+
+def pbs(bssdict):
+    for i in range(0, len(bssdict)):
+        print(bssdict[__bitswap_stat_dict[i]])
+
+## OUTDATED LEGACY ##
 class IPFS_API:
     '''
     ipfsnode = Ipfs_API()

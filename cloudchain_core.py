@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"""Main module."""
+"""Cloud Chain Core main module."""
+
+# DEBUG OPTIOM
+_debug = True
 
 # IMPORTS #
 
@@ -18,9 +21,31 @@ import requests
 # local core library classes and functions are imported via core.main
 from core.main import *
 
-# main script sequence that spawns subsequent processes decribed below
+
+if __name__ == "__main__":
+    # Setup Sequence
+
+    # IPFS API CONNECTION 
+    ipfsnode = IPFS_API_CONNECTION()
+
+    # IPFS Debug variables from ipfsapi
+    __ipfs_bitswap_stat = ipfsnode.bitswap_stat()
+    __ipfs_swarm_peers = ipfsnode.swarm_peers()
+    __ipfs_swarm_addrs = ipfsnode.swarm_addrs()
     
-    # Establish setup sequence
+    # Convert debug variables into python objects for 
+    if _debug:
+        pbs(__ipfs_bitswap_stat)
+    
+
+
+
+
+
     # User login sequence 
 
-mainmenu.display()
+
+
+    # display the main menu
+    #mainmenu.display()
+    
