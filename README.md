@@ -18,12 +18,14 @@
 
 ### Go Language
 [golang/go](https://github.com/golang/go)
-[Go](https://golang.org/)
 
 
 ## Usage
 
 ## Documentation
+http://cloudchain.solutions
+https://www.python.org/
+https://golang.org/
 
 ## Featured Projects
 
