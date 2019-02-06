@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Install](#install)
+    - [Python](#python)
 - [Usage](#usage)
 - [Documentation](#documentation)
 - [Featured Projects](#featured-projects)
@@ -11,6 +12,8 @@
 - [License](#license)
 
 ## Install
+### Python
+[Python](https://github.com/python/cpython)
 
 ## Usage
 
