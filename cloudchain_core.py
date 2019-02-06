@@ -33,12 +33,13 @@ if __name__ == "__main__":
     __ipfs_swarm_peers = ipfsnode.swarm_peers()
     __ipfs_swarm_addrs = ipfsnode.swarm_addrs()
     
-    # Convert debug variables into python objects for 
+    # debug scripts
     if _debug:
         pbs(__ipfs_bitswap_stat)
+
+    # Convert debug variables into python objects for 
     
-
-
+    
 
 
 
