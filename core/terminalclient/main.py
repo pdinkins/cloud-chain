@@ -9,12 +9,13 @@ class Interface:
     """
     Terminal Interface
     """
-    def __init__(self, menudict, menutitle, lus=None):
+    def __init__(self, menudict, menutitle, lus=0):
         self.__menudict = menudict
         self.__menutitle = menutitle
         self.__operating_system = platform.system()
-        self.__userstate = self.checkuserstate()
         self.__localuserstate = lus
+        self.__userstate = self.checkuserstate()
+        
     
     # Horizontal Title Bar
     def __title_bar(self):
@@ -78,6 +79,6 @@ def choose_from_menu(menulist, menu_dictionary):
 
 if __name__ == "__main__":
     testdict = {}
-    ui = Interface(testdict)
+    ui = Interface(testdict, "test")
     #ui.display()
 

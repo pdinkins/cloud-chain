@@ -12,10 +12,12 @@ import datetime
 import shutil
 
 # third party package imports
-import ipfsapi
 import requests
 
-# local module imports
+# core module classes and function imports
+from core.ipfs.main import IPFS_API
+from core.terminalclient.main import Interface
+
 
 # Github Repositories 
 gitrepo_go_ipfs = "https://github.com/ipfs/go-ipfs.git"
@@ -43,7 +45,15 @@ def __write_config_file():
         cfgfile.write(str(__config))
 
 
+def node_server_debug_client():
+    os.system("start py -i core/nodeserver/client.py")
 
+def httpserver():
+    os.system("start py -m http.server --bind 127.0.0.1")
 
+ccc_menu_dict = {
+    "node-server debug client": node_server_debug_client,
+    "http server": httpserver
+}
         
-
+mainmenu = Interface(ccc_menu_dict, "CloudChainCore")

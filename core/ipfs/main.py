@@ -1,17 +1,11 @@
-# NODE $ERVER$Y$TEM ## IPFS # 
-'''
-# IPFS
-# interact with the ipfs network 
-# 
-# This module makes use of the py-ipfs-api to interact with
-# an ipfs node. 
- 
-'''
-# --------- IMPORTS -------- #
-import ipfsapi
-import requests 
-import sys
+# -*- coding: utf-8 -*-
 
+"""IPFS main module."""
+
+# IMPORTS #
+
+# third party package imports
+import ipfsapi
 
 
 class IPFS_API:
