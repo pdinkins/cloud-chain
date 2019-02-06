@@ -5,6 +5,7 @@
 ## Table of Contents
 - [Install](#install)
     - [Python](#python)
+    - [Go](#go-language)
 - [Usage](#usage)
 - [Documentation](#documentation)
 - [Featured Projects](#featured-projects)
@@ -13,7 +14,12 @@
 
 ## Install
 ### Python
-[Python](https://github.com/python/cpython)
+[python/cpython](https://github.com/python/cpython)
+
+### Go Language
+[golang/go](https://github.com/golang/go)
+[Go](https://golang.org/)
+
 
 ## Usage
 
