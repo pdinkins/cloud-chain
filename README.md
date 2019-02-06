@@ -23,11 +23,12 @@
 ## Usage
 
 ## Documentation
-http://cloudchain.solutions
-https://www.python.org/
-https://golang.org/
+- [cloudchain.solutions](http://cloudchain.solutions/)
+- [python.org](https://www.python.org/)
+- [golang.org](https://golang.org/)
 
 ## Featured Projects
+- [opensourceplanet.org](http://opensourceplanet.org/)
 
 ## Contribute
 
