@@ -33,4 +33,4 @@
 ## Contribute
 
 ## License
-- [License](https://github.com/pdinkins/cloud-chain/License)
+- [License](https://github.com/pdinkins/cloud-chain/blob/master/LICENSE)
