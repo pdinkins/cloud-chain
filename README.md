@@ -5,7 +5,8 @@
 ## Table of Contents
 - [Install](#install)
     - [Python](#python)
-    - [Go](#go-language)
+    - [Go](#go-lang)
+    - [IPFS](#ipfs)
 - [Usage](#usage)
 - [Documentation](#documentation)
 - [Featured Projects](#featured-projects)
@@ -14,13 +15,16 @@
 
 ## Install
 ### Python
-[python/cpython](https://github.com/python/cpython)
+- [python/cpython](https://github.com/python/cpython)
 
-### Go Language
-[golang/go](https://github.com/golang/go)
+### Go lang
+- [golang/go](https://github.com/golang/go)
 
+### IPFS
+- [go-ipfs](https://docs.ipfs.io/introduction/install/)
 
 ## Usage
+
 
 ## Documentation
 - [cloudchain.solutions](http://cloudchain.solutions/)
