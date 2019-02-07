@@ -1,6 +1,7 @@
 ![logo](docs/media/logo.png)
 
 [![](https://img.shields.io/badge/made%20by-CloudChain%20Solutions-blue.svg?style=flat-square)](http://cloudchain.solutions)
+[![](https://img.shields.io/badge/_VERSION_-%200_1_26-blue.svg?style=flat-square)]()
 
 ## Table of Contents
 - [Install](#install)
@@ -17,13 +18,13 @@
 ## Install
 
 ### Package Manager
-Mac OSX
+Mac OSX users install Homebrew. Run the following command as admin.
 - [Homebrew](https://brew.sh/)
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Windows
+Windows users install Chocolatey. Run the following command as admin. 
 - [Chocolatey](https://chocolatey.org/)
 ```
 $ @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
