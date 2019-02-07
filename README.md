@@ -18,14 +18,12 @@
 ## Install
 
 ### Package Manager
-- [Homebrew](https://brew.sh/)
-Mac OSX users install Homebrew. Run the following command as admin.
+- Mac OSX users need to install [Homebrew](https://brew.sh/). Run the following command with admin priveleges.
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-- [Chocolatey](https://chocolatey.org/)
-Windows users install Chocolatey. Run the following command as admin. 
+- Windows users need to install [Chocolatey](https://chocolatey.org/). Run the following command with admin priveleges. 
 ```
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
@@ -35,8 +33,7 @@ Linux
 - [Yum](http://yum.baseurl.org/)
 
 ### Python
-- [python/cpython](https://github.com/python/cpython)
-Python can be installed with both of the package managers previously installed above. Run the commands as admin.
+- [Python](https://github.com/python/cpython) can be installed with both of the package managers previously installed above. Run the commands as admin.
 ```
 choco install python
 ```
