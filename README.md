@@ -18,16 +18,16 @@
 ## Install
 
 ### Package Manager
-Mac OSX users install Homebrew. Run the following command as admin.
 - [Homebrew](https://brew.sh/)
+Mac OSX users install Homebrew. Run the following command as admin.
 ```
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Windows users install Chocolatey. Run the following command as admin. 
 - [Chocolatey](https://chocolatey.org/)
+Windows users install Chocolatey. Run the following command as admin. 
 ```
-$ @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
 
 Linux
@@ -36,15 +36,38 @@ Linux
 
 ### Python
 - [python/cpython](https://github.com/python/cpython)
+Python can be installed with both of the package managers previously installed above. Run the commands as admin.
+```
+choco install python
+```
+Or
+```
+brew install python
+```
 
 ### Go lang
 - [golang/go](https://github.com/golang/go)
+Go can be installed the same way. Run the commands as admin.
+```
+choco install go
+```
+Or 
+```
+brew install go
+```
 
 ### IPFS
 - [go-ipfs](https://docs.ipfs.io/introduction/install/)
+IPFS can be installed the same way. Run as admin.
+```
+choco install ipfs
+```
+Or 
+```
+brew install ipfs
+```
 
 ## Usage
-
 
 ## Documentation
 - [cloudchain.solutions](http://cloudchain.solutions/)
