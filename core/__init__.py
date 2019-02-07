@@ -1,1 +1,1 @@
-__all__ = ['branchingblockchain', 'nodeserver', 'pythos', 'terminalclient', "ipfs"]
+__all__ = ['branchingblockchain', 'nodeserver', 'pythos', 'terminalclient', "ipfs", "network"]

@@ -12,3 +12,10 @@ History
 * website/dev updated
 * pdf notes
 * issue tracker
+
+0.1.26-2.7.19
+* updated readme with software requirements and installation processes
+* core development still underway
+* ipfs api integration
+* core structure design 
+* network library, server, client
