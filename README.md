@@ -30,8 +30,8 @@ $ @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Inp
 ```
 
 Linux
-- [Pacman]()
-- [Yum]()
+- [Pacman](https://www.archlinux.org/pacman/)
+- [Yum](http://yum.baseurl.org/)
 
 ### Python
 - [python/cpython](https://github.com/python/cpython)
