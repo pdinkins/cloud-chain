@@ -15,7 +15,10 @@ import shutil
 import requests
 
 # core module classes and function imports
-from core.ipfs.main import IPFS_API, IPFS_API_CONNECTION, pbs
+from core.ipfs.main import IPFS_API
+from core.ipfs.main import IPFS_API_CONNECTION
+from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
+
 from core.terminalclient.main import Interface
 
 

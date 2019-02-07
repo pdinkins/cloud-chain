@@ -2,7 +2,7 @@
 
 """Cloud Chain Core main module."""
 
-# DEBUG OPTIOM
+# DEBUG OPTION
 _debug = True
 
 # IMPORTS #
@@ -23,30 +23,12 @@ from core.main import *
 
 
 if __name__ == "__main__":
-    # Setup Sequence
-
-    # IPFS API CONNECTION 
+    # SETUP #
+    # IPFS API CONNECTION !!! ipfs daemon must be running
     ipfsnode = IPFS_API_CONNECTION()
-
     # IPFS Debug variables from ipfsapi
-    __ipfs_bitswap_stat = ipfsnode.bitswap_stat()
-    __ipfs_swarm_peers = ipfsnode.swarm_peers()
-    __ipfs_swarm_addrs = ipfsnode.swarm_addrs()
-    
-    # debug scripts
-    if _debug:
-        pbs(__ipfs_bitswap_stat)
-
-    # Convert debug variables into python objects for 
-    
-    
-
-
-
+    # Convert debug variables into python objects
     # User login sequence 
-
-
-
     # display the main menu
     #mainmenu.display()
     

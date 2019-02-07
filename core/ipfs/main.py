@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""IPFS main module."""
+"""core.main module."""
 
 # IMPORTS #
 
@@ -10,20 +10,12 @@ import ipfsapi
 def IPFS_API_CONNECTION():
     return ipfsapi.connect("127.0.0.1", 5002)
 
-__bitswap_stat_dict= [
-    'ProvideBufLen', 
-    'Wantlist', 
-    'Peers', 
-    'BlocksReceived', 
-    'DataReceived', 
-    'BlocksSent', 
-    'DataSent', 
-    'DupBlksReceived', 
-    'DupDataReceived']
 
-def pbs(bssdict):
-    for i in range(0, len(bssdict)):
-        print(bssdict[__bitswap_stat_dict[i]])
+def PRINT_IPFS_DEBUG_INFO(dictobj):
+    dictkeys = dictobj.keys()
+    for i in range(0, len(dictkeys)):
+        print(dictobj[dictkeys[i]])
+
 
 ## OUTDATED LEGACY ##
 class IPFS_API:
@@ -76,3 +68,19 @@ class IPFS_API:
     # grabs the current bitswap_stat dictionary containing list of peers and data usage amounts
     def _ipfs_bitswap_stat(self):
         return self._api_connection.bitswap_stat
+
+
+__bitswap_stat_dict= [
+    'ProvideBufLen', 
+    'Wantlist', 
+    'Peers', 
+    'BlocksReceived', 
+    'DataReceived', 
+    'BlocksSent', 
+    'DataSent', 
+    'DupBlksReceived', 
+    'DupDataReceived']
+
+def pbs(bssdict):
+    for i in range(0, len(bssdict)):
+        print(bssdict[__bitswap_stat_dict[i]])
