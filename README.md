@@ -1,7 +1,7 @@
 ![logo](docs/media/logo.png)
 
 [![](https://img.shields.io/badge/made%20by-CloudChain%20Solutions-blue.svg?style=flat-square)](http://cloudchain.solutions)
-[![](https://img.shields.io/badge/_VERSION_-%200_1_26-blue.svg?style=flat-square)]()
+[![](https://img.shields.io/badge/_VERSION_-%200%2E1%2E26-blue.svg?style=flat-square)]()
 
 ## Table of Contents
 - [Install](#install)
