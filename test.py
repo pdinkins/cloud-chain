@@ -13,6 +13,7 @@ import sys
 import platform
 import datetime
 import shutil
+import time
 
 # third party package imports
 import ipfsapi
@@ -22,6 +23,9 @@ import requests
 from core.main import *
 
 if __name__ == "__main__":
+    # launch ipfs daemon
+    #os.system(".\scripts\ipfs.sh")
+    #time.sleep(3)
     # IPFS API CONNECTION !!! ipfs daemon must be running
     ipfsnode = IPFS_API_CONNECTION()
     # IPFS Debug variables from ipfsapi
@@ -31,6 +35,9 @@ if __name__ == "__main__":
     __ipfs_swarm_addrs = ipfsnode.swarm_addrs()
     if _debug:
         PRINT_IPFS_DEBUG_INFO(__ipfs_node_id)
+        input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_bitswap_stat)
+        input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_swarm_peers)
+        input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_swarm_addrs)

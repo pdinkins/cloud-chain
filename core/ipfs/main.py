@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""core.main module."""
+"""core.ipfs.main module."""
 
 # IMPORTS #
 
@@ -12,9 +12,10 @@ def IPFS_API_CONNECTION():
 
 
 def PRINT_IPFS_DEBUG_INFO(dictobj):
-    dictkeys = dictobj.keys()
+    dictkeys = list(dictobj.keys())
     for i in range(0, len(dictkeys)):
-        print(dictobj[dictkeys[i]])
+        print(dictkeys[i], ' ', dictobj[dictkeys[i]])
+
 
 
 ## OUTDATED LEGACY ##
