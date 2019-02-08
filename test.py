@@ -24,8 +24,6 @@ from core.main import *
 
 if __name__ == "__main__":
     # launch ipfs daemon
-    #os.system(".\scripts\ipfs.sh")
-    #time.sleep(3)
     # IPFS API CONNECTION !!! ipfs daemon must be running
     ipfsnode = IPFS_API_CONNECTION()
     # IPFS Debug variables from ipfsapi

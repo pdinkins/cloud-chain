@@ -24,7 +24,7 @@ from core.main import *
 
 if __name__ == "__main__":
     # SETUP #
-    # IPFS API CONNECTION !!! ipfs daemon must be running
+    # IPFS API CONNECTION
     ipfsnode = IPFS_API_CONNECTION()
     # IPFS Debug variables from ipfsapi
     # Convert debug variables into python objects

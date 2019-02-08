@@ -15,18 +15,17 @@ import shutil
 import requests
 
 # core module classes and function imports
+from core.config.main import CORE_CONFIG
+
+from core.logger.main import CORE_LOGGER
+
+from core.ipfs.main import CORE_IPFS
 from core.ipfs.main import IPFS_API
 from core.ipfs.main import IPFS_API_CONNECTION
 from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
+from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
 from core.terminalclient.main import Interface
-
-
-# Github Repositories 
-gitrepo_go_ipfs = "https://github.com/ipfs/go-ipfs.git"
-gitrepo_ripple = "https://github.com/ripple/rippled.git"
-gitrepo_ripple_net_crawler = "https://github.com/ripple/rippled-network-crawler.git"
-
 
 
 def node_server_debug_client():

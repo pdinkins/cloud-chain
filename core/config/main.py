@@ -15,7 +15,7 @@ class CORE_CONFIG:
     
     def __return_os(self):
         # return the operationg system with the platform library
-        self.__os = platform.os()
+        self.__os = platform.platform()
         return self.__os
 
 

@@ -3,20 +3,33 @@
 """core.ipfs.main module."""
 
 # IMPORTS #
+# python library imports
+import subprocess
+import time
 
 # third party package imports
 import ipfsapi
 
-def IPFS_API_CONNECTION():
-    return ipfsapi.connect("127.0.0.1", 5002)
+class CORE_IPFS:
+    def __init__(self):
+        self.core = self.__return_core()
+    
+    def __return_core(self):
+        return self.core
+        
 
+def IPFS_API_CONNECTION():
+    # this function requires that an ipfs node daemon be running
+    # also assumes the api address is set to default
+    return ipfsapi.connect("127.0.0.1", 5002)
 
 def PRINT_IPFS_DEBUG_INFO(dictobj):
     dictkeys = list(dictobj.keys())
     for i in range(0, len(dictkeys)):
         print(dictkeys[i], ' ', dictobj[dictkeys[i]])
 
-
+def LAUNCH_IPFS_DAEMON():
+    return subprocess.run(["ipfs", "daemon"])
 
 ## OUTDATED LEGACY ##
 class IPFS_API:
