@@ -5,6 +5,13 @@ import os
 import shutil
 import datetime
 
+class CORE_INTERFACE:
+    def __init__(self):
+        self.interface = self.__return_interface()
+    
+    def __return_interface(self):
+        return self.interface
+
 class Interface:
     """
     Terminal Interface

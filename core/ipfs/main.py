@@ -15,7 +15,8 @@ class CORE_IPFS:
         self.core = self.__return_core()
     
     def __return_core(self):
-        return self.core
+        self.__core = "CORE_IPFS.core"
+        return self.__core
         
 
 def IPFS_API_CONNECTION():
@@ -30,6 +31,8 @@ def PRINT_IPFS_DEBUG_INFO(dictobj):
 
 def LAUNCH_IPFS_DAEMON():
     return subprocess.run(["ipfs", "daemon"])
+
+
 
 ## OUTDATED LEGACY ##
 class IPFS_API:

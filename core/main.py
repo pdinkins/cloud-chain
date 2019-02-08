@@ -27,6 +27,11 @@ from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
 from core.terminalclient.main import Interface
 
+class CORE:
+    def __init__(self):
+        self.__ipfs = CORE_IPFS
+        self.__config = CORE_CONFIG
+        self.__logger = CORE_LOGGER
 
 def node_server_debug_client():
     os.system("start py -i core/nodeserver/client.py")
