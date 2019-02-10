@@ -4,9 +4,18 @@ let win
 
 function createWindow () {
  
-  win = new BrowserWindow({ width: 800, height: 600 })
+  win = new BrowserWindow({
+      show: true,
+      width: 1024,
+      height: 768,
+      minWidth: 400,
+      minHeight: 200,
+      resizable: true,
+      center: true,
+      autoHideMenuBar: true
+  })
   win.loadFile('index.html')
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
   win.on('closed', () => {
     win = null
   })
