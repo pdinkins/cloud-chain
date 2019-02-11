@@ -1,0 +1,25 @@
+{
+  "name": "cloudchain",
+  "version": "0.1.26",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "description": "![logo](docs/media/logo.png)",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdinkins/cloud-chain.git"
+  },
+  "author": "john parker dinkins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pdinkins/cloud-chain/issues"
+  },
+  "homepage": "https://github.com/pdinkins/cloud-chain#readme",
+  "dependencies": {
+    "electron": "^4.0.4"
+  }
+}
