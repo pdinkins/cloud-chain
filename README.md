@@ -46,11 +46,11 @@ brew install python
 - [golang/go](https://github.com/golang/go)
 Go can be installed the same way. Run the commands as admin.
 ```
-choco install go
+choco install golang
 ```
 Or 
 ```
-brew install go
+brew install golang
 ```
 
 ### IPFS
