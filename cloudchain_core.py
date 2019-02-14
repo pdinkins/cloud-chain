@@ -23,12 +23,6 @@ from core.main import *
 
 
 if __name__ == "__main__":
-    # SETUP #
-    # IPFS API CONNECTION
-    ipfsnode = IPFS_API_CONNECTION()
-    # IPFS Debug variables from ipfsapi
-    # Convert debug variables into python objects
-    # User login sequence 
     # display the main menu 
-    #mainmenu.display()
+    mainmenu.display()
     

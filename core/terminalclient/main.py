@@ -9,6 +9,7 @@ import datetime
 class CORE_INTERFACE:
     """
     Terminal Interface
+    # TODO: dynamic titles 
     """
     def __init__(self, menudict, menutitle, lus=0):
         self.__menudict = menudict

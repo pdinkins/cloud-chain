@@ -39,20 +39,25 @@ class CORE:
 def node_server_debug_client():
     os.system("start py -i core/nodeserver/client.py")
 
-def httpserver():
-    os.system("start py -m http.server --bind 127.0.0.1")
-
 def setupsequence():
     os.system("start echo system")
 
-ccc_menu_dict = {
-    "node-server debug client": node_server_debug_client,
-    "http server": httpserver
-}
-
+# submenu.setup
 ccc_setup_menu_dict = {
     "setup sequence": setupsequence
 }
-
-mainmenu = CORE_INTERFACE(ccc_menu_dict, "CloudChainCore")
 setupmenu = CORE_INTERFACE(ccc_setup_menu_dict, "Setup Menu")
+
+# submenu.network
+ccc_network_menu_dict = {
+    "HTTP Server" : HOST_LOCAL_HTTP_SERVER_WIN,
+    "node-server debug client": node_server_debug_client
+}
+networkmenu = CORE_INTERFACE(ccc_network_menu_dict, "Network Menu")
+
+# menu.main
+ccc_menu_dict = {
+    "Setup": setupmenu.display,
+    "Network": networkmenu.display
+}
+mainmenu = CORE_INTERFACE(ccc_menu_dict, "CloudChainCore")

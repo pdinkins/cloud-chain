@@ -32,6 +32,9 @@ except ModuleNotFoundError:
 # local core library classes and functions are imported via core.main
 from core.main import *
 
+def test_main_menu():
+    mainmenu.display()
+
 def test_IPFS():
     # launch ipfs daemon
     try:
@@ -57,21 +60,23 @@ def test_IPFS():
     __ipfs_swarm_addrs = ipfsnode.swarm_addrs()
     if _debug:
         PRINT_IPFS_DEBUG_INFO(__ipfs_node_id)
-        #input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_bitswap_stat)
-        #input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_swarm_peers)
-        #input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_swarm_addrs)
 
 
+def test_terminalClient():
+    testdict = {"testMenuFunction": test_return}
+    testUI = CORE_INTERFACE(testdict, "testTitle")
+    testUI.display()
 
-
-
-
+def test_return():
+    return "test"
 
 def test_ALL():
     test_IPFS()
+    test_terminalClient()
+    test_main_menu()
 
 if __name__ == "__main__":
     test_ALL()
