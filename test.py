@@ -14,8 +14,8 @@ import platform
 import datetime
 import shutil
 import time
-import multiprocessing
 import unittest
+from multiprocessing
 
 # third party package imports
 import ipfsapi
@@ -27,7 +27,6 @@ from core.main import *
 if __name__ == "__main__":
     # launch ipfs daemon
     #LAUNCH_IPFS_DAEMON()
-    ipfsdaemon = multiprocessing.proce
     # IPFS API CONNECTION !!! ipfs daemon must be running
     ipfsnode = IPFS_API_CONNECTION()
     
