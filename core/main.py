@@ -23,6 +23,7 @@ from core.ipfs.main import CORE_IPFS
 from core.ipfs.main import IPFS_API
 from core.ipfs.main import IPFS_API_CONNECTION
 from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
+from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
 from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
 from core.terminalclient.main import Interface

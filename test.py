@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""test module."""
+"""Cloud Chain Core test module."""
 
 
 # DEBUG OPTION
@@ -15,20 +15,38 @@ import datetime
 import shutil
 import time
 import unittest
-from multiprocessing
 
 # third party package imports
-import ipfsapi
-import requests
+try:
+    import ipfsapi
+except ModuleNotFoundError:
+    os.system("pip install ipfsapi")
+    import ipfsapi
+
+try:
+    import requests
+except ModuleNotFoundError:
+    os.system("pip install requests")
+    import requests
 
 # local core library classes and functions are imported via core.main
 from core.main import *
 
-if __name__ == "__main__":
+def test_IPFS():
     # launch ipfs daemon
-    #LAUNCH_IPFS_DAEMON()
+    try:
+        LAUNCH_IPFS_DAEMON()
+    except Exception as error:
+        debug.log(error)
+        return
+    # 3 second delay to allow the daemon to start up
+    time.sleep(3)
     # IPFS API CONNECTION !!! ipfs daemon must be running
-    ipfsnode = IPFS_API_CONNECTION()
+    try:
+        ipfsnode = IPFS_API_CONNECTION()
+    except Exception as error:
+        debug.log(error)
+        return
     
     # IPFS Debug variables from ipfsapi
     __ipfs_node_id = ipfsnode.id()
@@ -43,3 +61,10 @@ if __name__ == "__main__":
         PRINT_IPFS_DEBUG_INFO(__ipfs_swarm_peers)
         input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_swarm_addrs)
+
+def test_ALL():
+    test_IPFS()
+
+if __name__ == "__main__":
+    debug = CORE_LOGGER()
+    test_ALL()

@@ -6,6 +6,7 @@
 # python library imports
 import subprocess
 import time
+import os
 
 # third party package imports
 import ipfsapi
@@ -22,15 +23,21 @@ class CORE_IPFS:
 def IPFS_API_CONNECTION():
     # this function requires that an ipfs node daemon be running
     # also assumes the api address is set to default
-    return ipfsapi.connect("127.0.0.1", 5002)
+    try:
+        return ipfsapi.connect("127.0.0.1", 5001)
+    except ConnectionRefusedError:
+        return ipfsapi.connect("127.0.0.1", 5002)
 
 def PRINT_IPFS_DEBUG_INFO(dictobj):
     dictkeys = list(dictobj.keys())
     for i in range(0, len(dictkeys)):
         print(dictkeys[i], ' ', dictobj[dictkeys[i]])
 
-def LAUNCH_IPFS_DAEMON():
+def LAUNCH_SP_IPFS_DAEMON():
     return subprocess.run(["ipfs", "daemon"])
+
+def LAUNCH_IPFS_DAEMON():
+    os.system("start ipfs daemon")
 
 
 
