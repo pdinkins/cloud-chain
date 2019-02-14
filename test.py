@@ -40,7 +40,9 @@ def test_IPFS():
         debug.log(error)
         return
     # 3 second delay to allow the daemon to start up
-    time.sleep(3)
+    for i in range(3):
+        print(i)
+        time.sleep(i)
     # IPFS API CONNECTION !!! ipfs daemon must be running
     try:
         ipfsnode = IPFS_API_CONNECTION()
@@ -55,16 +57,21 @@ def test_IPFS():
     __ipfs_swarm_addrs = ipfsnode.swarm_addrs()
     if _debug:
         PRINT_IPFS_DEBUG_INFO(__ipfs_node_id)
-        input()
+        #input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_bitswap_stat)
-        input()
+        #input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_swarm_peers)
-        input()
+        #input()
         PRINT_IPFS_DEBUG_INFO(__ipfs_swarm_addrs)
+
+
+
+
+
+
 
 def test_ALL():
     test_IPFS()
 
 if __name__ == "__main__":
-    debug = CORE_LOGGER()
     test_ALL()

@@ -28,6 +28,8 @@ from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
 from core.terminalclient.main import Interface
 
+from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
+
 class CORE:
     def __init__(self):
         self.__ipfs = CORE_IPFS

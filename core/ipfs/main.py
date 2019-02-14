@@ -13,7 +13,7 @@ import ipfsapi
 
 class CORE_IPFS:
     def __init__(self):
-        self.core = self.__return_core()
+        self.core = self.__return_core
     
     def __return_core(self):
         self.__core = "CORE_IPFS.core"
@@ -23,13 +23,16 @@ class CORE_IPFS:
 def IPFS_API_CONNECTION():
     # this function requires that an ipfs node daemon be running
     # also assumes the api address is set to default
-    try:
+    # return ipfs api connnection via the py-ipfs-api packages
+    try: 
         return ipfsapi.connect("127.0.0.1", 5001)
     except ConnectionRefusedError:
         return ipfsapi.connect("127.0.0.1", 5002)
 
 def PRINT_IPFS_DEBUG_INFO(dictobj):
+    # create a list of the keys for the given dictionary
     dictkeys = list(dictobj.keys())
+    # loop over the dictionary and print the data 
     for i in range(0, len(dictkeys)):
         print(dictkeys[i], ' ', dictobj[dictkeys[i]])
 
@@ -37,6 +40,7 @@ def LAUNCH_SP_IPFS_DAEMON():
     return subprocess.run(["ipfs", "daemon"])
 
 def LAUNCH_IPFS_DAEMON():
+    # spawn ipfs daemon instance in another command prompt window
     os.system("start ipfs daemon")
 
 
