@@ -26,7 +26,7 @@ from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
 from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
 from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
-from core.terminalclient.main import Interface
+from core.terminalclient.main import CORE_INTERFACE
 
 from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
 
@@ -53,6 +53,6 @@ ccc_menu_dict = {
 ccc_setup_menu_dict = {
     "setup sequence": setupsequence
 }
-        
-mainmenu = Interface(ccc_menu_dict, "CloudChainCore")
-setupmenu = Interface(ccc_setup_menu_dict, "Setup Menu")
+
+mainmenu = CORE_INTERFACE(ccc_menu_dict, "CloudChainCore")
+setupmenu = CORE_INTERFACE(ccc_setup_menu_dict, "Setup Menu")
