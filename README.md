@@ -6,6 +6,7 @@
 ## Table of Contents
 - [Install](#install)
     - [Package Manager](#package-manager)
+    - [Git](#git)
     - [Python](#python)
     - [Go](#go-lang)
     - [IPFS](#ipfs)
@@ -28,12 +29,22 @@
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 ```
 
-Linux
+Linux package manager options
 - [Pacman](https://www.archlinux.org/pacman/)
 - [Yum](http://yum.baseurl.org/)
 
+### Git
+- [Git](https://git-scm.com/) can be installed with both of the package managers previously installed above.
+```
+choco install git
+```
+Or
+```
+brew install git
+```
+
 ### Python
-- [Python](https://github.com/python/cpython) can be installed with both of the package managers previously installed above. Run the commands as admin.
+- [Python](https://github.com/python/cpython) Run the commands as admin.
 ```
 choco install python
 ```

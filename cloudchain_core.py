@@ -29,6 +29,6 @@ if __name__ == "__main__":
     # IPFS Debug variables from ipfsapi
     # Convert debug variables into python objects
     # User login sequence 
-    # display the main menu
+    # display the main menu 
     #mainmenu.display()
     
