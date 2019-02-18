@@ -7,17 +7,6 @@ _debug = True
 
 # IMPORTS #
 
-# python library imports 
-import os
-import sys
-import platform
-import shutil
-import datetime
-
-# third party python imports
-import ipfsapi
-import requests
-
 # local core library classes and functions are imported via core.main
 from core.main import *
 

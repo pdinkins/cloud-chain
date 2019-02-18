@@ -55,6 +55,11 @@ ccc_network_menu_dict = {
 }
 networkmenu = CORE_INTERFACE(ccc_network_menu_dict, "Network Menu")
 
+# submenu.ipfs
+ccc_ipfs_menu_dict = {
+    "IPFS Daemon": LAUNCH_IPFS_DAEMON,
+    ""
+}
 # menu.main
 ccc_menu_dict = {
     "Setup": setupmenu.display,
