@@ -1,13 +1,10 @@
-'''
+##############  BROKEN ##################
 # generate
 # Functions for generating blocks on the genesis chain
-##############  BROKEN ##################
 # beware when venturing foward
 # you will get a headache
-# 
 # Use this for logic referance
-#
-'''
+
 
 from blocks import Genesis_Chain, Block
 import chain
