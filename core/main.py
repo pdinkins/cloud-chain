@@ -42,6 +42,7 @@ def node_server_debug_client():
 def setupsequence():
     os.system("start echo system")
 
+### SUBMENUS ###
 # submenu.setup
 ccc_setup_menu_dict = {
     "setup sequence": setupsequence
@@ -59,6 +60,9 @@ networkmenu = CORE_INTERFACE(ccc_network_menu_dict, "Network Menu")
 ccc_ipfs_menu_dict = {
     "IPFS Daemon": LAUNCH_IPFS_DAEMON
 }
+ipfsmenu = CORE_INTERFACE(ccc_ipfs_menu_dict, "IPFS Menu")
+
+### MAIN MENU ###
 # menu.main
 ccc_menu_dict = {
     "Setup": setupmenu.display,
