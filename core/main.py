@@ -19,6 +19,7 @@ from core.config.main import CORE_CONFIG
 
 from core.logger.main import CORE_LOGGER
 
+# CCC IPFS MODULE FUNCTION 
 from core.ipfs.main import CORE_IPFS
 from core.ipfs.main import IPFS_API
 from core.ipfs.main import IPFS_API_CONNECTION
@@ -26,9 +27,16 @@ from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
 from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
 from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
+# CORE INTERFACE 
 from core.terminalclient.main import CORE_INTERFACE
 
+# CCC NETWORKING SERVER 
 from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
+
+# CCC NETWORKING CLIENT 
+from core.network.client.main import connect_socket
+from core.network.client.main import open_socket
+from core.network.client.main import connect_to_node
 
 class CORE:
     def __init__(self):
@@ -41,6 +49,9 @@ def node_server_debug_client():
 
 def setupsequence():
     os.system("start echo system")
+
+
+# TODO: menu class heirarchy  
 
 ### SUBMENUS ###
 # submenu.setup
@@ -58,7 +69,9 @@ networkmenu = CORE_INTERFACE(ccc_network_menu_dict, "Network Menu")
 
 # submenu.ipfs
 ccc_ipfs_menu_dict = {
-    "IPFS Daemon": LAUNCH_IPFS_DAEMON
+    "IPFS Daemon": LAUNCH_IPFS_DAEMON,
+    "IPFS Daemon SP": LAUNCH_SP_IPFS_DAEMON,
+    "IPFS API CONNECTION": IPFS_API_CONNECTION
 }
 ipfsmenu = CORE_INTERFACE(ccc_ipfs_menu_dict, "IPFS Menu")
 

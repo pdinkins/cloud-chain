@@ -14,3 +14,7 @@ import datetime
 import requests
 
 # setup process
+
+# get the computers ip address
+def getip()
+    requests.get()

@@ -39,4 +39,4 @@ def open_socket(ip, port):
 
 def connect_socket(soc, ip, port):
     newsocket.connect((ip, port))
-    
+
