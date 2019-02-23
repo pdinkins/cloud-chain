@@ -56,8 +56,8 @@ def setupsequence(self):
 
 
 #### MODULE HELP FUNCTIONS ####
-def help_writer():
-    print(help_writer)
+def _help_writer():
+    print(writer_help)
 
 #### DEBUG MENU ####
 # TODO: menu class heirarchy  
@@ -86,7 +86,7 @@ ipfsmenu = CORE_INTERFACE(ccc_ipfs_menu_dict, "IPFS Menu")
 
 # submenu.help 
 ccc_help_menu_dict = {
-    "Writer": help_writer
+    "Writer": _help_writer
 }
 helpmenu = CORE_INTERFACE(ccc_help_menu_dict, "Help Menu")
 
