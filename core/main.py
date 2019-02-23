@@ -17,6 +17,10 @@ import requests
 # core module classes and function imports
 from core.config.main import CORE_CONFIG
 
+from core.writer.main import writer_help
+from core.writer.main import FileObject
+from core.writer.main import Write2file
+
 from core.logger.main import CORE_LOGGER
 
 # CCC IPFS MODULE FUNCTION 
@@ -44,13 +48,18 @@ class CORE:
         self.__config = CORE_CONFIG
         self.__logger = CORE_LOGGER
 
-def node_server_debug_client():
+def node_server_debug_client(self):
     os.system("start py -i core/nodeserver/client.py")
 
-def setupsequence():
+def setupsequence(self):
     os.system("start echo system")
 
 
+#### MODULE HELP FUNCTIONS ####
+def help_writer():
+    print(help_writer)
+
+#### DEBUG MENU ####
 # TODO: menu class heirarchy  
 
 ### SUBMENUS ###
@@ -75,10 +84,18 @@ ccc_ipfs_menu_dict = {
 }
 ipfsmenu = CORE_INTERFACE(ccc_ipfs_menu_dict, "IPFS Menu")
 
+# submenu.help 
+ccc_help_menu_dict = {
+    "Writer": help_writer
+}
+helpmenu = CORE_INTERFACE(ccc_help_menu_dict, "Help Menu")
+
 ### MAIN MENU ###
 # menu.main
 ccc_menu_dict = {
     "Setup": setupmenu.display,
-    "Network": networkmenu.display
+    "Network": networkmenu.display,
+    "IPFS": ipfsmenu.display,
+    "Help": helpmenu.display
 }
-mainmenu = CORE_INTERFACE(ccc_menu_dict, "CloudChainCore")
+debugmainmenu = CORE_INTERFACE(ccc_menu_dict, "CloudChainCore")

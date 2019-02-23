@@ -13,5 +13,5 @@ from core.main import *
 
 if __name__ == "__main__":
     # display the main menu 
-    mainmenu.display()
+    debugmainmenu.display()
     

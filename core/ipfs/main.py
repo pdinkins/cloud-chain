@@ -44,7 +44,6 @@ def LAUNCH_IPFS_DAEMON():
     os.system("start ipfs daemon")
 
 
-
 ## OUTDATED LEGACY ##
 class IPFS_API:
     '''
