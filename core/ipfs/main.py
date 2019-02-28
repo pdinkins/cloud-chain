@@ -18,7 +18,14 @@ class CORE_IPFS:
     def __return_core(self):
         self.__core = "CORE_IPFS.core"
         return self.__core
-        
+
+class IPFS_NODE:
+    def __init__(self, NodeID, PublicKey, PrivateKey):
+        self.NodeId = NodeID
+        self.PubKey = PublicKey
+        self.PriKey = PrivateKey
+
+
 
 def IPFS_API_CONNECTION():
     # this function requires that an ipfs node daemon be running
