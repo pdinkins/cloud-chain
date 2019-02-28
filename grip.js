@@ -5,4 +5,4 @@ win.on('closed', () => {
     win = null
 })
 
-win.loadURL('http://127.0.0.1:6419/')
+win.loadURL('http://localhost:6419/')

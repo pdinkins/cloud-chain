@@ -16,7 +16,8 @@ function createWindow () {
       center: true,
       autoHideMenuBar: true
   })
-  win.loadFile('index.html')
+  // win.loadFile('index.html')
+  win.loadURL('http://localhost:6419/')
   // win.webContents.openDevTools()
   win.on('closed', () => {
     win = null
