@@ -1,0 +1,38 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                var moving__background = $("#header__background");
+                $(window).scroll(function() { 
+                    moving__background.css('margin-top', ($(window).scrollTop())/3); // Parallax scrolling
+                    moving__background.css('opacity', 1 - ($(window).scrollTop())/moving__background.height()); // Fading out
+                });
+              });
+    </script>
+    <div id="header">
+            <div id="header__background">
+                <div id="header__centered">
+                    <h1>Page Title</h1>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+                <div id="header__background">
+                    <div id="header__centered">
+                        <h1>Page Title</h1>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
