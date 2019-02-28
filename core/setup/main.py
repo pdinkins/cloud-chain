@@ -41,6 +41,11 @@ def GETCWD():
 def CHGDIR(path):
     return os.chdir(path)
 
+def GETCWDFNAME():
+    _cwd = GETCWD()
+    data = _cwd.split('\\')
+    _n = len(data)
+    print(data[_n-1])
 
 # get the computers ip address
 def getip():

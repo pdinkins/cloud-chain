@@ -35,12 +35,10 @@ Linux package manager options
 
 ### Git
 - [Git](https://git-scm.com/) can be installed with both of the package managers previously installed above.
-```
-choco install git
-```
-Or
-```
-brew install git
+```console
+$ choco install git
+or
+$ brew install git
 ```
 
 ### Python

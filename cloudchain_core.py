@@ -3,8 +3,9 @@
 """Cloud Chain Core main module."""
 
 # DEBUG OPTION
-_debug = True
-_test = True
+_debug = False
+_test = False
+_electron_app = True
 
 # IMPORTS #
 # python library imports
@@ -21,7 +22,11 @@ if __name__ == "__main__":
             os.system("start py test.py")
         elif platform.system == "Darwin":
             os.system("python3 test.py")             
-    if _debug:
+    elif _debug:
         # display the debug main menu
         debugmainmenu.display()
-    
+    elif _electron_app:
+        # launch the electron front end ui
+        os.system("npm start")
+    else:
+        sys.exit()

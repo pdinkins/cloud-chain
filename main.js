@@ -1,3 +1,5 @@
+// Cloud Chain Electron Front End UI 
+
 const { app, BrowserWindow } = require('electron')
 
 let win
