@@ -1,5 +1,17 @@
-import sys, os, traceback, types
+# -*- coding: utf-8 -*-
 
+"""core.terminalclient.admin module."""
+
+# IMPORTS #
+
+# python library imports
+import sys
+import os
+import traceback
+import types
+
+
+# check if the user has admin status 
 def isUserAdmin():
 
     if os.name == 'nt':
@@ -17,6 +29,7 @@ def isUserAdmin():
     else:
         raise (RuntimeError, "Unsupported operating system for this module: %s" % (os.name,))
 
+# run cmd as admin 
 def runAsAdmin(cmdLine=None, wait=True):
 
     if os.name != 'nt':
@@ -64,6 +77,7 @@ def runAsAdmin(cmdLine=None, wait=True):
 
     return rc
 
+# test the script
 def test():
     rc = 0
     if not isUserAdmin():
@@ -76,6 +90,6 @@ def test():
     x = input('Press Enter to exit.')
     return rc
 
-
+# main namespace testing function eexcutiuon 
 if __name__ == "__main__":
     sys.exit(test())

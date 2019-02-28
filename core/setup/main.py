@@ -13,8 +13,15 @@ import datetime
 # third party package imports
 import requests
 
+
+
 # setup process
+def SETUP():
+    env = os.environ()
+    cwd = os.getcwd()
+    login = os.getlogin()
+    return [env, cwd, login]
 
 # get the computers ip address
-def getip()
+def getip():
     requests.get()

@@ -14,16 +14,22 @@ import shutil
 # third party package imports
 import requests
 
-# core module classes and function imports
+# CCC CONFIG
 from core.config.main import CORE_CONFIG
 
+# CCC SETUP
+from core.setup.main import SETUP
+from core.setup.main import getip
+
+# CCC WRITER
 from core.writer.main import writer_help
 from core.writer.main import FileObject
 from core.writer.main import Write2file
 
+# CCC LOGGER
 from core.logger.main import CORE_LOGGER
 
-# CCC IPFS MODULE FUNCTION 
+# CCC IPFS 
 from core.ipfs.main import CORE_IPFS
 from core.ipfs.main import IPFS_API
 from core.ipfs.main import IPFS_API_CONNECTION
@@ -31,8 +37,10 @@ from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
 from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
 from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
-# CORE INTERFACE 
+# CCC TERMINAL CLIENT 
 from core.terminalclient.main import CORE_INTERFACE
+from core.terminalclient.admin import isUserAdmin
+from core.terminalclient.admin import runAsAdmin 
 
 # CCC NETWORKING SERVER 
 from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
@@ -48,12 +56,15 @@ class CORE:
         self.__config = CORE_CONFIG
         self.__logger = CORE_LOGGER
 
-def node_server_debug_client(self):
+def node_server_debug_client():
     os.system("start py -i core/nodeserver/client.py")
 
-def setupsequence(self):
-    os.system("start echo system")
-
+def setupsequence():
+    #os.system("start echo system")
+    setupdata = SETUP()
+    for i in range(0, len(setupdata)):
+        print(setupdata[i])
+    x = input(">")
 
 #### MODULE HELP FUNCTIONS ####
 def _help_writer():
