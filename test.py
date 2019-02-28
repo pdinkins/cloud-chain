@@ -35,6 +35,13 @@ from core.main import *
 def test_main_menu():
     mainmenu.display()
 
+def test_setup_functions():
+    s = SETUP()
+    d = DIRNAME()
+    dd = DIRPATH()
+    print(s, d, dd)
+
+
 def test_IPFS():
     # launch ipfs daemon
     try:
@@ -77,6 +84,7 @@ def test_ALL():
     test_IPFS()
     test_terminalClient()
     test_main_menu()
+    test_setup_functions()
 
 if __name__ == "__main__":
     test_ALL()

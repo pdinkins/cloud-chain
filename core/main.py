@@ -20,6 +20,10 @@ from core.config.main import CORE_CONFIG
 # CCC SETUP
 from core.setup.main import SETUP
 from core.setup.main import getip
+from core.setup.main import DIRNAME
+from core.setup.main import CANPATH
+from core.setup.main import DIRPATH
+from core.setup.main import CHGDIR
 
 # CCC WRITER
 from core.writer.main import writer_help
@@ -66,6 +70,7 @@ def setupsequence():
     for i in range(0, len(setupdata)):
         print(setupdata[i])
     x = input(">")
+
 
 #### MODULE HELP FUNCTIONS ####
 def _help_writer():
