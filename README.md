@@ -68,13 +68,17 @@ $ brew install ipfs
 ```
 
 ## Usage
-
+```console
+$ cd cloud-chain
+$ python3 test.py
+$ python3 cloudchain-core.py
+```
 ## Documentation
-- [cloudchain.solutions](http://cloudchain.solutions/)
 - [python.org](https://www.python.org/)
 - [golang.org](https://golang.org/)
 
 ## Featured Projects
+- [cloudchain.solutions](http://cloudchain.solutions/)
 - [opensourceplanet.org](http://opensourceplanet.org/)
 
 ## Contribute

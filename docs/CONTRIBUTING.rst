@@ -15,7 +15,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/pdinkins/cloudchain_core/issues.
+Report bugs at https://github.com/pdinkins/cloud-chain/issues.
 
 If you are reporting a bug, please include:
 
@@ -38,14 +38,14 @@ and "help wanted" is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-cloudchain core could always use more documentation, whether as part of the
-official cloudchain core docs, in docstrings, or even on the web in blog posts,
+cloud-chain could always use more documentation, whether as part of the
+official cloud-chain docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/pdinkins/cloudchain_core/issues.
+The best way to send feedback is to file an issue at https://github.com/pdinkins/cloud-chain/issues.
 
 If you are proposing a feature:
 
@@ -57,17 +57,17 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `cloudchain_core` for local development.
+Ready to contribute? Here's how to set up `cloud-chain` for local development.
 
-1. Fork the `cloudchain_core` repo on GitHub.
+1. Fork the `cloud-chain` repo on GitHub.
 2. Clone your fork locally::
 
     $ git clone git@github.com:your_name_here/cloudchain_core.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv cloudchain_core
-    $ cd cloudchain_core/
+    $ mkvirtualenv cloud-chain
+    $ cd cloud-chain/
     $ python setup.py develop
 
 4. Create a branch for local development::
