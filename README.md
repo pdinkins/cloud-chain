@@ -1,8 +1,8 @@
 ![logo](docs/media/logo.png)
 
-[![](https://img.shields.io/badge/made%20by-CloudChain%20Solutions-blue.svg?style=flat-square)](http://cloudchain.solutions)
-[![](https://img.shields.io/badge/_VERSION_-%200%2E1%2E26-blue.svg?style=flat-square)]()
-
+[![](https://img.shields.io/badge/MANAGED%20BY-Cloud%20Chain%20Solutions-blue.svg?style=flat-square)](http://cloudchain.solutions)
+[![](https://img.shields.io/badge/_VERSION_-%200%2E1%2E29-blue.svg?style=flat-square)]()
+[![](https://img.shields.io/badge/_LICENSE_-%20MIT-blue.svg?style=flat-square)](https://github.com/pdinkins/cloud-chain/blob/master/LICENSE)
 ## Table of Contents
 - [Install](#install)
     - [Package Manager](#package-manager)
@@ -43,34 +43,28 @@ $ brew install git
 
 ### Python
 - [Python](https://github.com/python/cpython) Run the commands as admin.
-```
-choco install python
-```
-Or
-```
-brew install python
+```console
+$ choco install python
+or
+$ brew install python
 ```
 
 ### Go lang
 - [golang/go](https://github.com/golang/go)
 Go can be installed the same way. Run the commands as admin.
-```
-choco install golang
-```
-Or 
-```
-brew install golang
+```console
+$ choco install golang
+or 
+$ brew install golang
 ```
 
 ### IPFS
 - [go-ipfs](https://docs.ipfs.io/introduction/install/)
 IPFS can be installed the same way. Run as admin.
-```
-choco install ipfs
-```
-Or 
-```
-brew install ipfs
+```console
+$ choco install ipfs
+or
+$ brew install ipfs
 ```
 
 ## Usage

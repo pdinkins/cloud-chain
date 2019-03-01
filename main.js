@@ -17,6 +17,7 @@ function createWindow () {
       autoHideMenuBar: true
   })
   // win.loadFile('index.html')
+  // display grip md previewer
   win.loadURL('http://localhost:6419/')
   // win.webContents.openDevTools()
   win.on('closed', () => {

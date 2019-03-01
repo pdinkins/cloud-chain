@@ -17,17 +17,31 @@ import time
 import unittest
 
 # third party package imports
-try:
-    import ipfsapi
-except ModuleNotFoundError:
-    os.system("pip install ipfsapi")
-    import ipfsapi
+def import_test_ipfsapi():
+    try:
+        import ipfsapi
+    except ModuleNotFoundError:
+        os.system("pip install ipfsapi")
+        import ipfsapi
 
-try:
-    import requests
-except ModuleNotFoundError:
-    os.system("pip install requests")
-    import requests
+def import_test_requests():
+    try:
+        import requests
+    except ModuleNotFoundError:
+        os.system("pip install requests")
+        import requests
+
+def import_test_grip():
+    try:
+        import grip
+    except ModuleNotFoundError:
+        os.system("pip install grip")
+        import grip
+
+def import_test_ALL():
+    import_test_grip()
+    import_test_requests()
+    import_test_ipfsapi()
 
 # local core library classes and functions are imported via core.main
 from core.main import *
