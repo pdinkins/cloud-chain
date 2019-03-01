@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Cloud Chain Core main module."""
+""" cloud-chain.cloudchain_core module."""
 
 # DEBUG OPTION
 _debug = False

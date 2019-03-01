@@ -6,4 +6,5 @@
 import sys
 import os
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
+from ..writer.main import FileObject
+from ..writer.main import Write2file

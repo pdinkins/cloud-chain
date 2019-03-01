@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""core.main module."""
+""" cloud-chain.core.main module."""
 
 # IMPORTS #
 
@@ -32,6 +32,11 @@ from core.writer.main import Write2file
 
 # CCC LOGGER
 from core.logger.main import CORE_LOGGER
+
+# CCC PYTHOS 
+from core.pythos.main import rfs
+from core.pythos.main import rfsm
+from core.pythos.main import rootfile_list_2
 
 # CCC IPFS 
 from core.ipfs.main import CORE_IPFS
@@ -82,7 +87,9 @@ def _help_writer():
 ### SUBMENUS ###
 # submenu.setup
 ccc_setup_menu_dict = {
-    "setup sequence": setupsequence
+    "setup sequence": setupsequence,
+    'root file system list 2': rootfile_list_2,
+    'directory info': rfsm,
 }
 setupmenu = CORE_INTERFACE(ccc_setup_menu_dict, "Setup Menu")
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Cloud Chain Core test module."""
+"""cloud-chain.test module."""
 
 
 # DEBUG OPTION
@@ -47,7 +47,7 @@ def import_test_ALL():
 from core.main import *
 
 def test_main_menu():
-    mainmenu.display()
+    debugmainmenu.display()
 
 def test_setup_functions():
     s = SETUP()
