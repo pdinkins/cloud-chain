@@ -41,7 +41,7 @@ def rfs(pathname):
                     pathname = os.path.join(root, file)
                     size = os.path.getsize(pathname)
                     tsizevar += size
-                    print(index, '\t\t', size, '\t\t', pathname)
+                    #print(index, '\t\t', size, '\t\t', pathname)
                     _dir_obj = dir_obj(index, size, pathname)
                     returndata.append(_dir_obj)
                     index += 1

@@ -33,6 +33,7 @@ from core.writer.main import Write2file
 from core.logger.main import CORE_LOGGER
 
 # CCC PYTHOS 
+from core.pythos.main import CORE_PYTHOS
 from core.pythos.main import rfs
 from core.pythos.main import rfsm
 from core.pythos.main import rootfile_list_2
@@ -78,6 +79,25 @@ def setupsequence():
         print(setupdata[i])
     catch()
 
+def pythos_dir_list():
+    pydl = CORE_PYTHOS().DirectoryObjectsList()
+    for i in range(0, len(pydl)):
+        pydlstr = pydl[i]._pathname
+        patharray = pydlstr.split('\\')
+        del patharray[0]
+        #print(patharray)
+        for j in range(0, len(patharray)):
+            if patharray[j] == ".git":
+                break
+            elif patharray[j] == "website":
+                break
+            elif patharray[j] == "node_modules":
+                break
+            elif patharray[j] == "core":
+                for z in range(0, len(patharray)):
+                    print("[" + "______" * z, patharray[z])
+            print("[")
+    catch()
 
 #### MODULE HELP FUNCTIONS ####
 def _help_writer():
@@ -93,6 +113,7 @@ ccc_setup_menu_dict = {
     "setup sequence": setupsequence,
     'root file system list 2': rootfile_list_2,
     'directory info': rfsm,
+    "pythos dir list": pythos_dir_list
 }
 setupmenu = CORE_INTERFACE(ccc_setup_menu_dict, "Setup Menu")
 
