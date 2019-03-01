@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
+__package__ = "cloud-chain.core.config.main"
+__version__ = "0.1.3"
 
-"""core.config.main module"""
 # IMPORTS 
-
 # python library imports 
 import os
 import sys

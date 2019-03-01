@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-"""core.ipfs.main module."""
+__package__ = "cloud-chain.core.ipfs.main"
+__version__ = "0.1.3"
 
 # IMPORTS #
 # python library imports

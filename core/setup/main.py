@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-
-"""Setup main module."""
+__package__ = "cloud-chain.core.setup.main"
+__version__ = "0.1.3"
 
 # IMPORTS #
-
 # python library imports
 import os 
 import sys

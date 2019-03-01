@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-
-"""cloud-chain.test module."""
-
+__package__ = "cloud-chain.test"
+__version__ = "0.1.3"
 
 # DEBUG OPTION
 _debug = True

@@ -1,5 +1,9 @@
-# terminal-client
+# -*- coding: utf-8 -*-
+__package__ = "cloud-chain.core.terminalclient.main"
+__version__ = "0.1.3"
 
+# IMPORTS # 
+# python library imports
 import platform
 import os
 import shutil

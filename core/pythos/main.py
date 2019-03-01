@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-__module__ = 'cloud-chain.core.pythos.main'
-
+__package__ = 'cloud-chain.core.pythos.main'
+__version__ = "0.1.3"
 
 # DEBUG OPTION
 _debug = True

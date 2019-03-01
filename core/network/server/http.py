@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-"""core.network.server.http module."""
+__package__ = "cloud-chain.core.network.server.http"
+__version__ = "0.1.3"
 
 import os
 

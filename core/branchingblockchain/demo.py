@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
+__package__ = "cloud-chain.core.branchingblockchain.demo"
+__version__ = "0.1.3"
 
 # BBC DEMO
 # Demonstrates class logic for the genesis chain model
-
-
 import hashlib as hasher
 import datetime as date
 

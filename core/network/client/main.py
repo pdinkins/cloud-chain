@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-
-"""core.network.client.main module."""
+__package__ = "cloud-chain.core.network.client.main"
+__version__ = "0.1.3"
 
 import socket
-
 
 testips = ["192.168.0.9"]
 SERVER_IP = testips[0]

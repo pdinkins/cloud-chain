@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-"""core.writer.main module"""
+__package__ = "cloud-chain.core.writer.main"
+__version__ = "0.1.3"
 
 writer_help = '''
 This module interacts with files and contians:

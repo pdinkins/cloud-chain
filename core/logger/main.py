@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-
-"""core.logger.main module."""
+__package__ = "cloud-chain.core.logger.main"
+__version__ = "0.1.3"
 
 # IMPORTS #
-
 # python library imports
 import logging
 import inspect

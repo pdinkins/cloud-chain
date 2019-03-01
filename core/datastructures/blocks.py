@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+__package__ = "cloud-chain.core.datastructures.blocks"
+__version__ = "0.1.3"
+
 class Genesis_Block:
     import datetime
     import hashlib as hasher

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-"""core.network.main module."""
+__package__ = "cloud-chain.core.network.main"
+__version__ = "0.1.3"
 
 class CORE_NETWORK:
     def __init__(self):

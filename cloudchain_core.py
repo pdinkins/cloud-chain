@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-""" cloud-chain.cloudchain_core module."""
+__package__ = "cloud-chain.cloudchain_core"
+__version__ = "0.1.3"
 
 # DEBUG OPTION
 _debug = False
