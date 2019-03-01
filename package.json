@@ -1,6 +1,6 @@
 {
   "name": "cloudchain",
-  "version": "0.1.26",
+  "version": "0.1.30",
   "main": "main.js",
   "scripts": {
     "start": "electron ."

@@ -3,9 +3,9 @@ __package__ = "cloud-chain.cloudchain_core"
 __version__ = "0.1.3"
 
 # DEBUG OPTION
-_debug = False
+_debug = True
 _test = False
-_electron_app = True
+_electron_app = False
 
 # IMPORTS #
 # python library imports
