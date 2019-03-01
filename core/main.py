@@ -65,6 +65,9 @@ class CORE:
         self.__config = CORE_CONFIG
         self.__logger = CORE_LOGGER
 
+def catch():
+    x = input(">")
+
 def node_server_debug_client():
     os.system("start py -i core/nodeserver/client.py")
 
@@ -73,12 +76,13 @@ def setupsequence():
     setupdata = SETUP()
     for i in range(0, len(setupdata)):
         print(setupdata[i])
-    x = input(">")
+    catch()
 
 
 #### MODULE HELP FUNCTIONS ####
 def _help_writer():
     print(writer_help)
+    catch()
 
 #### DEBUG MENU ####
 # TODO: menu class heirarchy  

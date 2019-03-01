@@ -9,7 +9,19 @@ _debug = True
 # python library imports 
 import os
 
+class CORE_PYTHOS:
+    def __init__(self):
+        self.DirectoryObjectsList = self.returnDirList
+    
+    def returnDirList(self):
+        self.listofdirobjs = rfs('.')
+        return self.listofdirobjs
 
+class dir_obj:
+    def __init__(self, index, size, pathname):
+        self._index = index
+        self._size = size
+        self._pathname = pathname
 
 def rfsm():
     path = input('path>')
@@ -19,6 +31,7 @@ def rfsm():
 def rfs(pathname):
     index = 0
     tsizevar = 0
+    returndata = []
     print('\n\nINDEX\t\tSIZE\t\tDIRECTORY')
     print('=' * 80)
     for root, dirs, files in os.walk(pathname):
@@ -29,16 +42,13 @@ def rfs(pathname):
                     size = os.path.getsize(pathname)
                     tsizevar += size
                     print(index, '\t\t', size, '\t\t', pathname)
+                    _dir_obj = dir_obj(index, size, pathname)
+                    returndata.append(_dir_obj)
                     index += 1
                 except PermissionError:
                     print('perm error')
-
             except (FileNotFoundError, OSError):
                 print('file not found error')
-
-    returndata = {'indexed files': index,'totalsize': tsizevar}
-    print(returndata)
-    input('>')
     return returndata
 
 def rootfile_list_2():
