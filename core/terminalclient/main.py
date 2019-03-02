@@ -3,7 +3,7 @@ __package__ = "cloud-chain.core.terminalclient.main"
 __version__ = "0.1.3"
 
 # TERMINAL CLIENT CONFIG 
-displaylogo = False
+displaylogo = True
 displaytitle = True
 
 # IMPORTS # 
