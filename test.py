@@ -60,14 +60,14 @@ def import_test_logger():
     # CCC LOGGER
     from core.logger.main import CORE_LOGGER
 
-def import_test_config():
+def import_test_pythos():
     # CCC PYTHOS 
     from core.pythos.main import CORE_PYTHOS
     from core.pythos.main import rfs
     from core.pythos.main import rfsm
     from core.pythos.main import rootfile_list_2
 
-def import_test_config():
+def import_test_ipfs():
     # CCC IPFS 
     from core.ipfs.main import CORE_IPFS
     from core.ipfs.main import IPFS_NODE
@@ -77,17 +77,17 @@ def import_test_config():
     from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
     from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
-def import_test_config():
+def import_test_terminalclient():
     # CCC TERMINAL CLIENT 
     from core.terminalclient.main import CORE_INTERFACE
     from core.terminalclient.admin import isUserAdmin
     from core.terminalclient.admin import runAsAdmin 
 
-def import_test_config():
+def import_test_network_server():
     # CCC NETWORKING SERVER 
     from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
 
-def import_test_config():
+def import_test_network_client():
     # CCC NETWORKING CLIENT 
     from core.network.client.main import connect_socket
     from core.network.client.main import open_socket
@@ -98,6 +98,15 @@ def import_test_ALL():
     import_test_grip()
     import_test_requests()
     import_test_ipfsapi()
+    import_test_ipfs()
+    import_test_config()
+    import_test_logger()
+    import_test_network_client()
+    import_test_network_server()
+    import_test_pythos()
+    import_test_setup()
+    import_test_terminalclient()
+    import_test_writer()
 
 # local core library classes and functions are imported via core.main
 from core.main import *
@@ -151,6 +160,7 @@ def test_return():
     return "test"
 
 def test_ALL():
+    import_test_ALL()
     test_IPFS()
     test_terminalClient()
     test_main_menu()
