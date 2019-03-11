@@ -38,60 +38,78 @@ def import_test_grip():
         import grip
 
 def import_test_config():
-    # CCC CONFIG
-    from core.config.main import CORE_CONFIG
+    try:
+        from core.config.main import CORE_CONFIG
+    except ModuleNotFoundError:
+
 
 def import_test_setup():
-    # CCC SETUP
-    from core.setup.main import SETUP
-    from core.setup.main import getip
-    from core.setup.main import DIRNAME
-    from core.setup.main import CANPATH
-    from core.setup.main import DIRPATH
-    from core.setup.main import CHGDIR
+    try:
+        from core.setup.main import SETUP
+        from core.setup.main import getip
+        from core.setup.main import DIRNAME
+        from core.setup.main import CANPATH
+        from core.setup.main import DIRPATH
+        from core.setup.main import CHGDIR
+    except ModuleNotFoundError:
+        print("IMPORT ERROR SETUP")
 
 def import_test_writer():
-    # CCC WRITER
-    from core.writer.main import writer_help
-    from core.writer.main import FileObject
-    from core.writer.main import Write2file
+    try:
+        from core.writer.main import writer_help
+        from core.writer.main import FileObject
+        from core.writer.main import Write2file
+    except ModuleNotFoundError:
+        print("IMPORT ERROR WRITER")
 
 def import_test_logger():
-    # CCC LOGGER
-    from core.logger.main import CORE_LOGGER
+    try:
+        from core.logger.main import CORE_LOGGER
+    except ModuleNotFoundError:
+        print("IMPORT ERROR LOGGER")
 
 def import_test_pythos():
-    # CCC PYTHOS 
-    from core.pythos.main import CORE_PYTHOS
-    from core.pythos.main import rfs
-    from core.pythos.main import rfsm
-    from core.pythos.main import rootfile_list_2
+    try:
+        from core.pythos.main import CORE_PYTHOS
+        from core.pythos.main import rfs
+        from core.pythos.main import rfsm
+        from core.pythos.main import rootfile_list_2
+    except ModuleNotFoundError:
+        print("IMPORT ERROR PYTHOS")
 
 def import_test_ipfs():
-    # CCC IPFS 
-    from core.ipfs.main import CORE_IPFS
-    from core.ipfs.main import IPFS_NODE
-    from core.ipfs.main import IPFS_API
-    from core.ipfs.main import IPFS_API_CONNECTION
-    from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
-    from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
-    from core.ipfs.main import LAUNCH_IPFS_DAEMON
+    try:
+        from core.ipfs.main import CORE_IPFS
+        from core.ipfs.main import IPFS_NODE
+        from core.ipfs.main import IPFS_API
+        from core.ipfs.main import IPFS_API_CONNECTION
+        from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
+        from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
+        from core.ipfs.main import LAUNCH_IPFS_DAEMON
+    except ModuleNotFoundError:
+        print("IMPORT ERROR IPFS")
 
 def import_test_terminalclient():
-    # CCC TERMINAL CLIENT 
-    from core.terminalclient.main import CORE_INTERFACE
-    from core.terminalclient.admin import isUserAdmin
-    from core.terminalclient.admin import runAsAdmin 
+    try:
+        from core.terminalclient.main import CORE_INTERFACE
+        from core.terminalclient.admin import isUserAdmin
+        from core.terminalclient.admin import runAsAdmin 
+    except ModuleNotFoundError:
+        print("IMPORT ERROR TERMINAL CLIENT")
 
 def import_test_network_server():
-    # CCC NETWORKING SERVER 
-    from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
+    try:
+        from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
+    except ModuleNotFoundError:
+        print("IMPORT ERROR NETWORK SERVER")
 
 def import_test_network_client():
-    # CCC NETWORKING CLIENT 
-    from core.network.client.main import connect_socket
-    from core.network.client.main import open_socket
-    from core.network.client.main import connect_to_node
+    try:
+        from core.network.client.main import connect_socket
+        from core.network.client.main import open_socket
+        from core.network.client.main import connect_to_node
+    except ModuleNotFoundError:
+        print("IMPORT ERROR NETWORK CLIENT")
 
 
 def import_test_ALL():
