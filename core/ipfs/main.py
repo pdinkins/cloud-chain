@@ -34,7 +34,12 @@ def IPFS_API_CONNECTION():
     try: 
         return ipfsapi.connect("127.0.0.1", 5001)
     except ConnectionRefusedError:
-        return ipfsapi.connect("127.0.0.1", 5002)
+        try:
+            return ipfsapi.connect("127.0.0.1", 5002)
+        except ConnectionRefusedError:
+            LAUNCH_IPFS_DAEMON()
+            IPFS_API_CONNECTION()
+            return ipfsapi.connect("127.0.0.1", 5001)
 
 def PRINT_IPFS_DEBUG_INFO(dictobj):
     # create a list of the keys for the given dictionary

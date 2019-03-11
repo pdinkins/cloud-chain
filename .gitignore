@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 # ds_store file on mac osx
 .DS_Store
 

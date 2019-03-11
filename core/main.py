@@ -99,6 +99,12 @@ def pythos_dir_list():
             print("[")
     catch()
 
+def ipfs_analytics():
+    pass
+
+
+
+
 #### MODULE HELP FUNCTIONS ####
 def _help_writer():
     print(writer_help)
@@ -131,6 +137,9 @@ ccc_ipfs_menu_dict = {
     "IPFS API CONNECTION": IPFS_API_CONNECTION
 }
 ipfsmenu = CORE_INTERFACE(ccc_ipfs_menu_dict, "IPFS Menu")
+
+# submenu.test
+ccc_test_menu_dict = {}
 
 # submenu.help 
 ccc_help_menu_dict = {

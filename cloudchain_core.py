@@ -9,7 +9,7 @@ _run = True
 # TEST OPTION
 _test = False
 # LAUNCH ELECTRON APP
-_electron_app = False
+_electron_app = True
 
 
 # IMPORTS #
