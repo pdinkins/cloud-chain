@@ -41,6 +41,7 @@ def import_test_config():
     try:
         from core.config.main import CORE_CONFIG
     except ModuleNotFoundError:
+        print("IMPORT ERROR CONFIG")
 
 
 def import_test_setup():
@@ -51,7 +52,7 @@ def import_test_setup():
         from core.setup.main import CANPATH
         from core.setup.main import DIRPATH
         from core.setup.main import CHGDIR
-    except ModuleNotFoundError:
+    except ImportError:
         print("IMPORT ERROR SETUP")
 
 def import_test_writer():
@@ -59,13 +60,13 @@ def import_test_writer():
         from core.writer.main import writer_help
         from core.writer.main import FileObject
         from core.writer.main import Write2file
-    except ModuleNotFoundError:
+    except ImportError:
         print("IMPORT ERROR WRITER")
 
 def import_test_logger():
     try:
         from core.logger.main import CORE_LOGGER
-    except ModuleNotFoundError:
+    except ImportError:
         print("IMPORT ERROR LOGGER")
 
 def import_test_pythos():
@@ -74,7 +75,7 @@ def import_test_pythos():
         from core.pythos.main import rfs
         from core.pythos.main import rfsm
         from core.pythos.main import rootfile_list_2
-    except ModuleNotFoundError:
+    except ImportError:
         print("IMPORT ERROR PYTHOS")
 
 def import_test_ipfs():
@@ -86,7 +87,7 @@ def import_test_ipfs():
         from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
         from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
         from core.ipfs.main import LAUNCH_IPFS_DAEMON
-    except ModuleNotFoundError:
+    except ImportError:
         print("IMPORT ERROR IPFS")
 
 def import_test_terminalclient():
@@ -94,13 +95,13 @@ def import_test_terminalclient():
         from core.terminalclient.main import CORE_INTERFACE
         from core.terminalclient.admin import isUserAdmin
         from core.terminalclient.admin import runAsAdmin 
-    except ModuleNotFoundError:
+    except ImportError:
         print("IMPORT ERROR TERMINAL CLIENT")
 
 def import_test_network_server():
     try:
         from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
-    except ModuleNotFoundError:
+    except ImportError:
         print("IMPORT ERROR NETWORK SERVER")
 
 def import_test_network_client():
@@ -108,7 +109,7 @@ def import_test_network_client():
         from core.network.client.main import connect_socket
         from core.network.client.main import open_socket
         from core.network.client.main import connect_to_node
-    except ModuleNotFoundError:
+    except ImportError:
         print("IMPORT ERROR NETWORK CLIENT")
 
 
