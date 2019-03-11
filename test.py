@@ -37,52 +37,61 @@ def import_test_grip():
         os.system("pip install grip")
         import grip
 
-# CCC CONFIG
-from core.config.main import CORE_CONFIG
+def import_test_config():
+    # CCC CONFIG
+    from core.config.main import CORE_CONFIG
 
-# CCC SETUP
-from core.setup.main import SETUP
-from core.setup.main import getip
-from core.setup.main import DIRNAME
-from core.setup.main import CANPATH
-from core.setup.main import DIRPATH
-from core.setup.main import CHGDIR
+def import_test_setup():
+    # CCC SETUP
+    from core.setup.main import SETUP
+    from core.setup.main import getip
+    from core.setup.main import DIRNAME
+    from core.setup.main import CANPATH
+    from core.setup.main import DIRPATH
+    from core.setup.main import CHGDIR
 
-# CCC WRITER
-from core.writer.main import writer_help
-from core.writer.main import FileObject
-from core.writer.main import Write2file
+def import_test_writer():
+    # CCC WRITER
+    from core.writer.main import writer_help
+    from core.writer.main import FileObject
+    from core.writer.main import Write2file
 
-# CCC LOGGER
-from core.logger.main import CORE_LOGGER
+def import_test_logger():
+    # CCC LOGGER
+    from core.logger.main import CORE_LOGGER
 
-# CCC PYTHOS 
-from core.pythos.main import CORE_PYTHOS
-from core.pythos.main import rfs
-from core.pythos.main import rfsm
-from core.pythos.main import rootfile_list_2
+def import_test_config():
+    # CCC PYTHOS 
+    from core.pythos.main import CORE_PYTHOS
+    from core.pythos.main import rfs
+    from core.pythos.main import rfsm
+    from core.pythos.main import rootfile_list_2
 
-# CCC IPFS 
-from core.ipfs.main import CORE_IPFS
-from core.ipfs.main import IPFS_NODE
-from core.ipfs.main import IPFS_API
-from core.ipfs.main import IPFS_API_CONNECTION
-from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
-from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
-from core.ipfs.main import LAUNCH_IPFS_DAEMON
+def import_test_config():
+    # CCC IPFS 
+    from core.ipfs.main import CORE_IPFS
+    from core.ipfs.main import IPFS_NODE
+    from core.ipfs.main import IPFS_API
+    from core.ipfs.main import IPFS_API_CONNECTION
+    from core.ipfs.main import PRINT_IPFS_DEBUG_INFO
+    from core.ipfs.main import LAUNCH_SP_IPFS_DAEMON
+    from core.ipfs.main import LAUNCH_IPFS_DAEMON
 
-# CCC TERMINAL CLIENT 
-from core.terminalclient.main import CORE_INTERFACE
-from core.terminalclient.admin import isUserAdmin
-from core.terminalclient.admin import runAsAdmin 
+def import_test_config():
+    # CCC TERMINAL CLIENT 
+    from core.terminalclient.main import CORE_INTERFACE
+    from core.terminalclient.admin import isUserAdmin
+    from core.terminalclient.admin import runAsAdmin 
 
-# CCC NETWORKING SERVER 
-from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
+def import_test_config():
+    # CCC NETWORKING SERVER 
+    from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
 
-# CCC NETWORKING CLIENT 
-from core.network.client.main import connect_socket
-from core.network.client.main import open_socket
-from core.network.client.main import connect_to_node
+def import_test_config():
+    # CCC NETWORKING CLIENT 
+    from core.network.client.main import connect_socket
+    from core.network.client.main import open_socket
+    from core.network.client.main import connect_to_node
 
 
 def import_test_ALL():
