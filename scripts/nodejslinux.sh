@@ -12,3 +12,7 @@ tar xzvf node-latest.tar.gz && cd node-v*
 sudo fakeroot checkinstall -y --install=no --pkgversion $(echo $(pwd) | sed -n -re's/.+node-v(.+)$/\1/p') make -j$(($(nproc)+1)) install
 # Replace [node_*] with the name of the generated .deb package of the previous step
 sudo dpkg -i node_*
+
+# more scipts
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install -y nodejs
