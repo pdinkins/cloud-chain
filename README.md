@@ -1,7 +1,7 @@
 ![logo](docs/media/logo.png)
 
 [![](https://img.shields.io/badge/MANAGED%20BY-Cloud%20Chain%20Solutions-blue.svg?style=flat-square)](http://cloudchain.solutions)
-[![](https://img.shields.io/badge/_VERSION_-%200%2E1%2E29-blue.svg?style=flat-square)]()
+[![](https://img.shields.io/badge/_VERSION_-%200%2E1%2E32-blue.svg?style=flat-square)]()
 [![](https://img.shields.io/badge/_LICENSE_-%20MIT-blue.svg?style=flat-square)](https://github.com/pdinkins/cloud-chain/blob/master/LICENSE)
 ## Table of Contents
 - [Install](#install)
