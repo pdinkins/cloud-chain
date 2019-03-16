@@ -19,3 +19,9 @@ History
 * ipfs api integration
 * core structure design 
 * network library, server, client
+
+0.1.34-3.15.19
+* structural updates
+* more os functionality
+* core build out
+* need more developers and new ideas
