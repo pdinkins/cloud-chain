@@ -100,7 +100,8 @@ def pythos_dir_list():
     catch()
 
 def ipfs_analytics():
-    pass
+    LAUNCH_IPFS_DAEMON()
+    
 
 
 
