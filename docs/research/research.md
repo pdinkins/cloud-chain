@@ -19,8 +19,11 @@ $ git clone https://github.com/pdinkins/cloud-chain.git
 
 #### IPFS
 - [ipfs](https://github.com/ipfs/ipfs)
+- [ipfs specs](https://github.com/ipfs/specs)
 - [go-ipfs](https://github.com/ipfs/go-ipfs)
 - [js-ipfs](https://github.com/ipfs/js-ipfs)
+- [py-ipfs](https://github.com/ipfs/py-ipfs)
+- [py-ipfs-api](https://github.com/ipfs/py-ipfs-api)
 
 #### LIB P2P
 - [libp2p](https://github.com/libp2p/libp2p)
