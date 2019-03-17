@@ -29,6 +29,15 @@ $ python3 main.py
 - [Becoming a blockchain developer](https://blockgeeks.com/guides/blockchain-developer/)
 - [Create your own blockchain](https://medium.com/coinmonks/create-your-own-blockchain-77d3164f414)
 - [Building a better blockchain](https://www.entrepreneur.com/article/300077)
+- [Buld your own blockchain](http://ecomunsing.com/build-your-own-blockchain)
+- [Blockchain in 30 minutes](https://medium.com/@ssaurel/create-your-own-blockchain-in-30-minutes-dbde3293b390)
+- [Code your own blockchain in less than 200 lines of Go!](https://medium.com/@mycoralhealth/code-your-own-blockchain-in-less-than-200-lines-of-go-e296282bcffc)
+- [Technology Choices When Building Your Own Blockchain](https://blog.cosmos.network/technology-choices-when-building-your-own-blockchain-a15385cf59bd)
+- [Blockchain architecture](https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture)
+- [Creating your own cryptocurrency](https://lifehacker.com/how-to-create-your-own-cryptocurrency-1825337462)
+- [Blockchain archituecture](https://www.pluralsight.com/guides/blockchain-architecture?clickid=0OEQ8awlSxyJT55xTp3WVUkrUklxmtRuPwHfTU0&irgwc=1&mpid=29332&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=29332&aid=7010a000001xAKZAA2)
+- [Blockchain architecture](https://blockchain.ieee.org/images/files/pdf/20180917-blockchain-architecture-and-reference-frameworks_-_c-lima.pdf)
+
 
 ### Repositories
 #### IPFS
