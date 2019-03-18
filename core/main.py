@@ -4,11 +4,7 @@ __version__ = "0.1.3"
 
 # IMPORTS #
 # python library imports 
-import os
-import sys
-import platform
-import datetime
-import shutil
+import os, sys, platform, datetime, shutil
 
 # third party package imports
 import requests

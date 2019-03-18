@@ -28,6 +28,7 @@ class Block:
         self.previous_hash = previoushash
         self.current_hash = currenthash
         self.next_hash = self.next_bhash()
+        self.header = self.header
 
     def next_bhash(self):
         shha = self.hasher.sha256()
