@@ -38,6 +38,9 @@ $ python3 main.py
 - [Blockchain archituecture](https://www.pluralsight.com/guides/blockchain-architecture?clickid=0OEQ8awlSxyJT55xTp3WVUkrUklxmtRuPwHfTU0&irgwc=1&mpid=29332&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=29332&aid=7010a000001xAKZAA2)
 - [Blockchain architecture](https://blockchain.ieee.org/images/files/pdf/20180917-blockchain-architecture-and-reference-frameworks_-_c-lima.pdf)
 
+#### VM
+- [Build a VM](https://www.codeproject.com/articles/43176/how-to-create-your-own-virtual-machine)
+- [build a vm pdf](https://www.codeproject.com/KB/recipes/B32Machine1/VMCS.pdf)
 
 ### Repositories
 #### IPFS
@@ -57,6 +60,6 @@ $ python3 main.py
 - [py-libp2p](https://github.com/libp2p/py-libp2p)
 - [rust-libp2p](https://github.com/libp2p/rust-libp2p)
 
-
 ### Videos
+
 ## DEVELOPMENT
