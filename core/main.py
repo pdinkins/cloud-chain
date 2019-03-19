@@ -97,10 +97,6 @@ def pythos_dir_list():
 
 def ipfs_analytics():
     LAUNCH_IPFS_DAEMON()
-    
-
-
-
 
 #### MODULE HELP FUNCTIONS ####
 def _help_writer():

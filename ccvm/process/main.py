@@ -4,6 +4,8 @@ __version__ = "0.1.3"
 __debug = True
 __test = True
 
+import inspect
+
 class PROCESS:
     def __init__(self):
         if __debug:
@@ -12,3 +14,6 @@ class PROCESS:
 
     def __test(self):
         return __test
+
+def OxPR():
+    return inspect.currentframe()
