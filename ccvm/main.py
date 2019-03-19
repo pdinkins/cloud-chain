@@ -34,7 +34,7 @@ from function.main import OxFX
 
 # PROCESS
 from process.main import PROCESS
-from process.main import OxPR
+from process.main import OxPX
 
 # TRANSACTION
 from transaction.main import TRANSACTION
@@ -91,4 +91,7 @@ class VM:
 
 
     def __test(self):
-        return __test
+        if __debug:
+            if __test:
+                return __test
+
