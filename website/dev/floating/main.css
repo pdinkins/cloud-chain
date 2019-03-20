@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text|Raleway');
+
+
+body {
+  margin: 0;
+}
+
+#parallax-container {
+  display: block;
+  height: 750px;
+}
+
+#parallax-container div {
+  position: fixed;
+  top: 0;
+  background-position: center !important;
+  transform: translateY(0px);
+  height: 750px;
+  width: 100%;
+}
+
+#content {
+  position: relative;
+  background-color: #030f33;
+  color: #ffffff;
+  padding: 100px;
+}
+
+#content h1 {
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Markazi Text', serif;
+}
+
+#content p {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,139 @@
+ /* Parallax base styles
+  --------------------------------------------- */
+  body {
+    background-color: black;
+  }
+  .parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;  
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+
+/* body styles */
+
+  body, html {
+    overflow: hidden;
+  }
+
+  body {
+    font: 100% Arial;
+  }
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+
+  /* style the groups
+  --------------------------------------------- */
+
+  #group1 {
+    z-index: 5; /* slide over group 2 */
+  }
+  
+  .group1_green {
+    position: absolute;
+    top:40%;
+    right:-10%;
+  }
+  #group2 {
+    z-index: 3; /* slide under groups 1 and 3 */
+  }
+
+  .group2_orange {
+    position: absolute;
+    left:5%;
+  }
+  .group2_yellow {
+     position: absolute;
+    top:56%;
+    right:26%;  
+  }
+
+  #group3 {
+    z-index: 4; /* slide over group 2 and 4 */
+  }
+  .group3_blueSmall {
+    position: absolute;
+    top:45%;
+    left:65%; 
+  }
+
+  .group3_red {
+    position: absolute;
+    top:80%;
+    left:42%;
+  }
+
+  #group4 {
+    z-index: 2; /* slide under group 3 and 5 */
+  }
+
+  .group4_orange {
+    position: absolute;
+    top:80%;
+    left:48%;
+  }
+
+  .group4_green {
+    position: absolute;
+    top:55%;
+    left:20%;
+  }
+
+  .credits {
+    position: absolute;
+    z-index:100;
+    bottom: 0vh;
+    top: auto;
+    font-size:80%;
+    text-align:center;
+    width: 100%;
+    background: white;
+  }
