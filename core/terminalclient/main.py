@@ -14,13 +14,13 @@ import shutil
 import datetime
 from multiprocessing import Process, Queue
 
-import pygame
-from pygame.locals import DOUBLEBUF
+#import pygame
+#from pygame.locals import DOUBLEBUF
 
 
-import pangolin
-import OpenGL.GL as gl
-import numpy as np
+#import pangolin
+#import OpenGL.GL as gl
+#import numpy as np
 
 cclogo = """
                                    /#################\..
@@ -135,7 +135,7 @@ def choose_from_menu(menulist, menu_dictionary):
 
 # R&D 
 # Copyright (c) 2018, George Hotz
-
+'''
 class Display2D(object):
   def __init__(self, W, H):
     pygame.init()
@@ -232,3 +232,4 @@ class Display3D(object):
     self.q.put((np.array(poses), np.array(pts), np.array(colors)/256.0))
 
 
+'''
