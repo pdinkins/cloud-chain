@@ -72,41 +72,31 @@ class VM:
         self.__tx = OxTXs
     
     def _CA_(self):
-        self._ca = CALL
-        self.__ca = OxCA
+        raise NotImplemented
 
     def _CN_(self):
-        self._cn = CHAIN
-        self.__cn = OxCN
+        raise NotImplemented
     
     def _CO_(self):
-        self._co = CLOUD
-        self.__co = OxCO
+        raise NotImplemented
     
     def _CR_(self):
-        self._cr = CREATE
-        self.__cr = OxCR
+        raise NotImplemented
 
     def _ER_(self):
-        self._er = ERRROR
-        self.__er = OxER
+        raise NotImplemented
 
     def _EX_(self):
-        self._ex = EXECUTE
-        self.__ex = OxEX
+        raise NotImplemented
 
     def _FX_(self):
-        self._fx = FUNCTION
-        self.__fx = OxFX
+        raise NotImplemented
 
     def _PX_(self):
-        self._px = PROCESS
-        self.__px = OxPX
+        raise NotImplemented
 
     def _TX_(self):
-        self._tx = TRANSACTION
-        self.__tx = OxTX
-
+        raise NotImplementeds
 
     def __test(self):
         if __debug:
