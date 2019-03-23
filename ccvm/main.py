@@ -43,60 +43,24 @@ from transaction.main import OxTX
 
 class VM:
     def __init__(self):
-        self.ca = self._CA_
-        self._ca = CALL
+        self.ca = CALL
         self.__ca = OxCA
-        self.cn = self._CN_
-        self._cn = CHAIN
+        self.cn = CHAIN
         self.__cn = OxCN
-        self.co = self._CO_
-        self._co = CLOUD
+        self.co = CLOUD
         self.__co = OxCO
-        self.cr = self._CR_
-        self._cr = CREATE
+        self.cr = CREATE
         self.__cr = OxCR
-        self.er = self._ER_
-        self._er = ERRROR
+        self.er = ERRROR
         self.__er = OxER
-        self.ex = self._EX_
-        self._ex = EXECUTE
+        self.ex = EXECUTE
         self.__ex = OxEX
-        self.fx = self._FX_
-        self._fx = FUNCTION
+        self.fx = FUNCTION
         self.__fx = OxFX
-        self.px = self._PX_
-        self._px = PROCESS
+        self.px = PROCESS
         self.__px = OxPX
-        self.tx = self._TX_
-        self._tx = TRANSACTION
-        self.__tx = OxTXs
-    
-    def _CA_(self):
-        raise NotImplemented
-
-    def _CN_(self):
-        raise NotImplemented
-    
-    def _CO_(self):
-        raise NotImplemented
-    
-    def _CR_(self):
-        raise NotImplemented
-
-    def _ER_(self):
-        raise NotImplemented
-
-    def _EX_(self):
-        raise NotImplemented
-
-    def _FX_(self):
-        raise NotImplemented
-
-    def _PX_(self):
-        raise NotImplemented
-
-    def _TX_(self):
-        raise NotImplementeds
+        self.tx = TRANSACTION
+        self.__tx = OxTX
 
     def __test(self):
         if __debug:
@@ -104,5 +68,11 @@ class VM:
                 return __test
 
 
+
 if __name__ == "__main__":
     vm = VM()
+    dl = [ca,cn,co,cr,er,ex,fx,px,tx]
+    if __debug:
+        for i in range(0, len(dl)):
+            vm.dl[i]()
+
