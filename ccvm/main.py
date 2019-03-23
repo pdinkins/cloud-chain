@@ -44,14 +44,32 @@ from transaction.main import OxTX
 class VM:
     def __init__(self):
         self.ca = self._CA_
+        self._ca = CALL
+        self.__ca = OxCA
         self.cn = self._CN_
+        self._cn = CHAIN
+        self.__cn = OxCN
         self.co = self._CO_
+        self._co = CLOUD
+        self.__co = OxCO
         self.cr = self._CR_
+        self._cr = CREATE
+        self.__cr = OxCR
         self.er = self._ER_
+        self._er = ERRROR
+        self.__er = OxER
         self.ex = self._EX_
+        self._ex = EXECUTE
+        self.__ex = OxEX
         self.fx = self._FX_
+        self._fx = FUNCTION
+        self.__fx = OxFX
         self.px = self._PX_
+        self._px = PROCESS
+        self.__px = OxPX
         self.tx = self._TX_
+        self._tx = TRANSACTION
+        self.__tx = OxTXs
     
     def _CA_(self):
         self._ca = CALL
@@ -95,3 +113,6 @@ class VM:
             if __test:
                 return __test
 
+
+if __name__ == "__main__":
+    vm = VM()
