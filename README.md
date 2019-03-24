@@ -74,6 +74,7 @@ $ python3 test.py
 $ python3 cloudchain-core.py
 ```
 ## Documentation
+- [DOCS](https://github.com/pdinkins/cloud-chain/blob/master/docs/research/research.md)
 - [python.org](https://www.python.org/)
 - [golang.org](https://golang.org/)
 
