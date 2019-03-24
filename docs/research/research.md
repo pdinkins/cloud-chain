@@ -62,4 +62,36 @@ $ python3 main.py
 
 ### Videos
 
+### Social Media Managment
+- [23 best](https://optinmonster.com/23-tools-that-will-take-your-social-media-marketing-to-the-next-level/)
+- [everpost](http://everypost.me/)
+- [bitly](https://bitly.com/)
+- [tailwind](https://www.tailwindapp.com/)
+- [agora](https://www.agorapulse.com/)
+- [visage](https://visage.co/)
+- [audiense](https://audiense.com/)
+- [tweepi](https://tweepi.com/)
+- [socialbakers](https://www.socialbakers.com/?v=4f&utm_expid=.9K7bx648TPSoNHOC5yAvZA.1&utm_referrer=https%3A%2F%2Foptinmonster.com%2F23-tools-that-will-take-your-social-media-marketing-to-the-next-level%2F)
+- [socedo](https://www.socedo.com/)
+- [hubspot](https://www.hubspot.com/)
+- [socialflow ](http://www.socialflow.com/)
+- [wordpressplugins](https://wordpress.org/plugins/tags/social-plugins/)
+- [buzzsumo](https://buzzsumo.com/)
+- [brand24](https://brand24.com/)
+- [oktopost](https://www.oktopost.com/)
+- [sociallfow](http://www.socialflow.com/)
+- [buffer](https://buffer.com/)
+- [socialoomph](https://www.socialoomph.com/)
+- [tagboard](https://tagboard.com/)
+- [sproutsocial](https://sproutsocial.com/)
+- [followerwonk](https://followerwonk.com/)
+- [hootsuite](https://hootsuite.com/)
+- [feedly](https://feedly.com/i/welcome)
+- [dlvrit](https://dlvrit.com/)
+- [scoop](https://www.scoop.it/)
+- [zapier](https://zapier.com/)
+- [edgar](https://meetedgar.com/)
+- [ifttt](https://ifttt.com/)
+- [curata](http://www.curata.com/)
+
 ## DEVELOPMENT
