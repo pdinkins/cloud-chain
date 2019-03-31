@@ -1,0 +1,152 @@
+
+How to Capture Video Stream with OpenCV (Python)
+Ask Question
+6
+
+I want to process mms video stream with OpenCV using Python. The stream comes from an IP camera I have no control over (traffic monitor). The stream is available as mms or mmst schemes -
+
+mms://194.90.203.111/cam2
+
+plays on both VLC and Windows Media Player.
+
+mmst://194.90.203.111/cam2
+
+works only on VLC. I've tried to change the scheme to HTTP by re-streaming with FFmpeg and VLC but it didn't work.
+
+As far as I understand, mms is using Windows Media Video to encode the stream. No luck adding '.mjpeg' at the end of the URI. I've yet to find what types of streaming are accepted by OpenCV.
+
+Here's my code -
+
+import cv2, platform
+#import numpy as np
+
+cam = "mms://194.90.203.111/cam2"
+#cam = 0 # Use  local webcam.
+
+cap = cv2.VideoCapture(cam)
+if not cap:
+    print("!!! Failed VideoCapture: invalid parameter!")
+
+while(True):
+    # Capture frame-by-frame
+    ret, current_frame = cap.read()
+    if type(current_frame) == type(None):
+        print("!!! Couldn't read frame!")
+        break
+
+    # Display the resulting frame
+    cv2.imshow('frame',current_frame)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# release the capture
+cap.release()
+cv2.destroyAllWindows()
+
+The What am I missing? What type of video streams can OpenCV capture? Is there an elegant solution without scheme change or transcoding?
+
+Thanks!
+
+Python ver 2.7.8, OpenCV's ver 2.4.9, Both x86. Win7 x64
+python opencv video streaming live-streaming
+shareimprove this question
+asked Nov 1 '14 at 16:13
+NoamR
+106115
+
+    Maybe this will help: petrkout.com/electronics/… in the Client section – Ryan Nov 1 '14 at 18:21 
+
+Thanks @Ryan! the link had a lot of good info. The Python part at the end nailed it. – NoamR Nov 7 '14 at 21:04
+
+add a comment
+1 Answer
+active
+oldest
+votes
+7
+
+Solved using FFmpeg and FFserver. Note FFserver only works on Linux. The solution uses python code from here as suggested by Ryan.
+
+Flow is as follows -
+
+    Start FFserver background process using the desired configuration (mjpeg in this case).
+    FFmpeg input is the mmst stream, output stream to localhost.
+    Run python script to open the localhost stream and decode frame by frame.
+
+Run FFserver
+
+ffserver -d -f /etc/ffserver.conf
+
+On a second terminal run FFmpeg
+
+ffmpeg -i mmst://194.90.203.111/cam2 http://localhost:8090/cam2.ffm
+
+The Python code. In this case, the code will open a window with the video stream.
+
+import cv2, platform
+import numpy as np
+import urllib
+import os
+
+cam2 = "http://localhost:8090/cam2.mjpeg"
+
+stream=urllib.urlopen(cam2)
+bytes=''
+while True:
+    # to read mjpeg frame -
+    bytes+=stream.read(1024)
+    a = bytes.find('\xff\xd8')
+    b = bytes.find('\xff\xd9')
+    if a!=-1 and b!=-1:
+        jpg = bytes[a:b+2]
+        bytes= bytes[b+2:]
+    frame = cv2.imdecode(np.fromstring(jpg, dtype=np.uint8),cv2.CV_LOAD_IMAGE_COLOR)
+    # we now have frame stored in frame.
+
+    cv2.imshow('cam2',frame)
+
+    # Press 'q' to quit 
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cv2.destroyAllWindows()
+
+ffserver.config -
+
+Port 8090
+BindAddress 0.0.0.0
+MaxClients 10
+MaxBandWidth 50000
+CustomLog -
+#NoDaemon
+
+<Feed cam2.ffm>
+    File /tmp/cam2.ffm
+    FileMaxSize 1G
+    ACL allow 127.0.0.1
+    ACL allow localhost
+</Feed>
+<Stream cam2.mjpeg>
+    Feed cam2.ffm
+    Format mpjpeg
+    VideoFrameRate 25
+    VideoBitRate 10240
+    VideoBufferSize 20480
+    VideoSize 320x240
+    VideoQMin 3
+    VideoQMax 31
+    NoAudio
+    Strict -1
+</Stream>
+<Stream stat.html>
+    Format status
+    # Only allow local people to get the status
+    ACL allow localhost
+    ACL allow 192.168.0.0 192.168.255.255
+</Stream>
+<Redirect index.html>
+    URL http://www.ffmpeg.org/
+</Redirect>
+
+Note that this ffserver.config needs more fine tuning, but they work rather well and produce a frame very close to source with only a little frame freeze.
+shareimprove this answer
