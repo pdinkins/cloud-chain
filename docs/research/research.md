@@ -94,4 +94,23 @@ $ python3 main.py
 - [ifttt](https://ifttt.com/)
 - [curata](http://www.curata.com/)
 
+### COMPUTER VISION
+- [OpenCV](http://opencv.org/) is a computer vision library that falls under the BSD license. It offers C, C++, Java and Python interfaces which support Linux, Mac, Windows, iOS, OS, and Android. The library is designed for maximum efficiency and offers great value when used to developer real-time applications.
+- [SimpleCV](http://simplecv.org/) is an open-source framework for computer vision applications. SimpleCV can also be used to use the OpenCV library and other powerful libraries available. With this, you can try out computer vision without diving deep into learning the file formats, bit depths, buffer management, etc.
+- [VLFeat](http://www.vlfeat.org/) is yet another open-source library. It offers popular computer vision algorithms and a clear understanding of extraction and matching.
+- [AForge.NET](http://www.aforgenet.com/) If you use C# and .NET and want to utilize it in the fields of Artificial Intelligence and Computer Vision, AForge.NET is for you.
+- [BoofCV](http://www.boofcv.org/) is an open source Java library. It can be used to develop robotics and computer vision applications. It offers high performance and easy to use.
+- [MatLab](https://www.education-ecosystem.com/guides/artificial-intelligence/computer-vision/history/)
+
+### AR SDKs
+- [AR](https://www.education-ecosystem.com/guides/game-development/augmented-reality/history/)
+- [GOOGLE ARCORE](https://developers.google.com/ar/discover/)Google's platform comes with various APIs, and some are available on both Android and iOS devices to support shared augmented reality experiences. To seamlessly blend the digital and the physical worlds, ARCore employs three main capabilities: motion tracking, environmental understanding, and light estimation
+- [Vuforia](https://www.vuforia.com/) is an augmented reality platform that offers complete SDK for creating AR apps. It has support for multiple feature set including target detection, virtual buttons, virtual buttons, scanning real objects for recognition, etc.
+- [ARTollKit](http://artoolkit.org/) was the first AR software tool released for developers. It is an open-source and can be used for mapping via OpenGL and 2D recognition. It also supports all the different platforms including the Linux, Windows, iOS and Android. The documentation is limited, but you can easily find information from other websites.
+- [LayAR](https://www.layar.com/) enables developers to watch terrain using layers and map them to the mobile device screen. It supports image recognition and mapping based on user location and recognized images.
+- [WikiTude AR SDK](https://www.wikitude.com/) offers great featureset to the developers. It supports top-notch image recognition, 3D tracking technology, tablets and smart glasses, etc.
+- [Kundan AR](https://www.kudan.eu/) you can do image recognition, mapping elements based on user location, tracking, and mapping additional elements via OpenGL.
+- [AR.js](https://github.com/jeromeetienne/AR.js) is an effective JavaScript-powered open source (MIT license) augmented reality SDK for the web. This solution (which developer Swizec uses) enables you to bring AR experiences to your web browser without having to download and install an app.
+- [DroidAR](https://bitstars.github.io/droidar/)  initially developed in 2010, is the only open source (GPLv3) AR SDK dedicated to Android applications. With the framework, you can easily build location-based and marker-based AR experiences for Android devices
+
 ## DEVELOPMENT
