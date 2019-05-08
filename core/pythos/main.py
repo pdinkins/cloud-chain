@@ -62,3 +62,9 @@ def rootfile_list_2():
     input('rootfile_list>\t')
     return rootfilelist
   
+def search(filetype):
+    ft = filetype
+    anyfile = os.listdir(".")
+    for file in anyfile:
+        if file.endswith(filetype):
+            print(file)
