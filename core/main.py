@@ -48,6 +48,9 @@ from core.terminalclient.main import CORE_INTERFACE
 from core.terminalclient.admin import isUserAdmin
 from core.terminalclient.admin import runAsAdmin 
 
+# CCC NETWORK 
+from core.network.main import CORE_NETWORK
+
 # CCC NETWORKING SERVER 
 from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
 
@@ -55,6 +58,7 @@ from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN
 from core.network.client.main import connect_socket
 from core.network.client.main import open_socket
 from core.network.client.main import connect_to_node
+
 
 class CORE:
     def __init__(self):
