@@ -5,24 +5,29 @@ __version__ = "0.1.3"
 import socket
 
 class SERVER:
-    def __init__(self, ip, port):
-        self._ip = ip
-        self._port = port
+    def __init__(self):
+        self._ip = self.__host_ip()
+        self._port = 1234
         self.__ip_t_c = None
         self.__port_t_c = None
         self.__type_check()
         self._tup = self.__tup_gen()
         self._socket = self.__create_socket()
+
+    def __host_ip(self):
+        self.host_name = socket.gethostname()
+        self.host_ip = socket.gethostbyname(self.host_name)
+        return self.host_ip
     
     def __type_check(self):
         try:
-            if type(ip) == str:
+            if type(self._ip) == str:
                 self.__ip_t_c = True
         except TypeError:
             self.__ip_t_c = False
         
         try:
-            if type(port) == int:
+            if type(self._port) == int:
                 self.__port_t_c = True
         except TypeError:
             self.__port_t_c = False
