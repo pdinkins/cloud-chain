@@ -8,6 +8,10 @@ testips = ["192.168.0.9"]
 SERVER_IP = testips[0]
 SERVER_PORT = 3145
 
+class CLIENT:
+        def __init__(self):
+                raise NotImplementedError
+
 
 def connect_to_node():
     # establish socket
