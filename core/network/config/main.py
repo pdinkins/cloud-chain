@@ -2,7 +2,7 @@
 __package__ = "cloud-chain.core.network.config.main"
 __version__ = "0.1.3"
 
-debug = True
+debug = False
 
 from socket import gethostname
 from socket import gethostbyname
