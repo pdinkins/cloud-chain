@@ -2,7 +2,7 @@
 __package__ = "cloud-chain.core.network.utils.ingest"
 __version__ = "0.1.3"
 
-from config.main import *
+from core.network.config.main import *
 from socket import socket
 from socket import AF_INET, SOCK_RAW, IPPROTO_IP, IP_HDRINCL
 from socket import SIO_RCVALL, RCVALL_ON

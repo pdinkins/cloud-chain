@@ -50,6 +50,7 @@ from core.terminalclient.admin import runAsAdmin
 
 # CCC NETWORK 
 from core.network.main import CORE_NETWORK
+from core.network.main import test_network
 
 # CCC NETWORKING SERVER 
 from core.network.server.http import HOST_LOCAL_HTTP_SERVER_WIN

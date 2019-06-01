@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-__package__ = "cloud-chain.cloudchain_core"
+__package__ = "cloud-chain.cloudchain"
 __version__ = "0.1.3"
 
 # DEBUG OPTION
-_debug = True
+_debug = False
 # DEBUG RUN LOOP
 _run = True
 # TEST OPTION
 _test = False
 # LAUNCH ELECTRON APP
-_electron_app = True
+_electron_app = False
 
 
 # IMPORTS #
@@ -42,6 +42,9 @@ if __name__ == "__main__":
         # launch the electron front end ui
         os.system("npm start")
     
+    # interactive shell
+    elif _run:
+        print(__package__, " version: ", __version__)
     # CLEAN SYSTEM EXIT 
     else:
         sys.exit()
