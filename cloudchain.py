@@ -40,6 +40,7 @@ if __name__ == "__main__":
     # LAUNCH ELECTRON APP
     elif _electron_app:
         # launch the electron front end ui
+        os.system("start grip")
         os.system("npm start")
     
     # interactive shell
