@@ -3,7 +3,7 @@ __package__ = "cloud-chain.cloudchain"
 __version__ = "0.1.3"
 
 # DEBUG OPTION
-_debug = False
+_debug = True
 # DEBUG RUN LOOP
 _run = True
 # TEST OPTION
