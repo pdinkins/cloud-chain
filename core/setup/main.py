@@ -29,7 +29,7 @@ def CANPATH(path):
     can_path = os.path.realpath(path)
     return can_path
 
-def DIRNAME():
+def DIRNAME(path):
     dir_name = os.path.dirname(path)
     return dir_name
 

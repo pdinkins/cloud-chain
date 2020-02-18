@@ -5,11 +5,11 @@ __version__ = "0.1.3"
 # DEBUG OPTION
 _debug = True
 # DEBUG RUN LOOP
-_run = True
+_run = False
 # TEST OPTION
 _test = False
 # LAUNCH ELECTRON APP
-_electron_app = False
+_electron_app = True
 
 
 # IMPORTS #
