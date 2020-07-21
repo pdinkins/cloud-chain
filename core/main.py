@@ -19,6 +19,8 @@ from core.setup.main import DIRNAME
 from core.setup.main import CANPATH
 from core.setup.main import DIRPATH
 from core.setup.main import CHGDIR
+from core.setup.main import GETCWD
+from core.setup.main import GETCWDFNAME
 
 # CCC WRITER
 from core.writer.main import writer_help
