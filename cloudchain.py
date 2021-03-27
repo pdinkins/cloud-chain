@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 __package__ = "cloud-chain.cloudchain"
 __version__ = "0.1.3"
-
+#
 # DEBUG OPTION
-_debug = True
+_debug = False
 # DEBUG RUN LOOP
-_run = False
+_run = True
 # TEST OPTION
 _test = False
 # LAUNCH ELECTRON APP
-_electron_app = True
+_electron_app = False
 
 
 # IMPORTS #

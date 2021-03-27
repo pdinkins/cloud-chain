@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/pdinkins/cloud-chain#readme",
   "dependencies": {
-    "electron": "^4.0.4"
+    "electron": "^9.1.0"
   }
 }
