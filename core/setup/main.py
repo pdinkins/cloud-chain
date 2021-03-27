@@ -8,6 +8,7 @@ import os
 import sys
 import platform
 import datetime
+import random
 
 # third party package imports
 import requests
@@ -49,3 +50,25 @@ def GETCWDFNAME():
 # get the computers ip address
 def getip():
     requests.get()
+
+def generate_random_string():
+    uppercase_letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    lowercase_letters = uppercase_letters.lower()
+    digits = "0123456789"
+    symbols = "!@#$%^&*()-=+{}[]?"
+    upper, lower, nums, syms = True, True, True, True
+    all = ""
+    if upper:
+        all += uppercase_letters
+    if lower:
+        all += lowercase_letters
+    if nums:
+        all += digits
+    if syms:
+        all += symbols
+    length = 20
+    #amount = 1
+    #for x in range(amount):
+    #    strings = "".join(random.sample(all, length))
+    string = "".join(random.sample(all, length))
+    return string
